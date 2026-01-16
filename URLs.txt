@@ -1,0 +1,225 @@
+رابط الريلز ايدي ندز بيه ايدي المستخدم
+https://i.instagram.com/api/v1/feed/reels_media/?reel_ids=2292802620
+السيين
+https://i.instagram.com/api/v1/stories/reel/seen
+
+https://www.instagram.com/mohamedalhabbo/?__a=1&__d=dis
+ينطي كل مواصفات الحساب ب ترو او فولس ومنها ايدي الحساب وجثثثثييير غيرها
+QVFCOTRaYlBzaHd2MVlSR293c0lnMGsyVkhIR1hRZTlFaEJtYUJwUzRZOWNKMUE3TWpPcWlGN3pDbm13SjZJVDBZbzFFREJkQ2FuRWt1Wk5UcVVtZjE4dg==
+
+https://www.instagram.com/api/v1/feed/reels_media/?reel_ids=964189106
+https://www.instagram.com/api/v1/feed/reels_media/?reel_ids=173560420&reel_ids=232192182&reel_ids=12281817&reel_ids=13460080&reel_ids=52093964096&reel_ids=48295599022&reel_ids=31213078880&reel_ids=26502955229
+https://www.instagram.com/ajax/bz?__d=dis
+
+
+https://www.instagram.com/p/Cki6biNoGuN/?__a=1&__d=dis
+نخليه على رابط بوست
+ينطينا الايدي والتيكن أت وايدي الماللك وجثير سوالف وياه
+
+
+https://i.instagram.com/api/v1/feed/user/6362536337/reel_media/
+{"message":"useragent mismatch","status":"fail"}
+
+https://www.instagram.com/graphql/query/?query_id=17851374694183129&id={acountId}&first=1000&after={cursor} to get an user followers. The information I need is the followed_by_count index that's only available per user on https://www.instagram.com/{username}?__a=1
+
+Is there a query_id that includes the followed_by_count in the result?
+
+
+https://www.instagram.com/graphql/query/?query_id=17851374694183129&id=964189106&first=1000&after=QVFBdVk5Q1FzWnFUYnllMTNoUW1rekNoa0NZdmVadGpvVS1ZWHhyUVBSYm1kdlAyNl84MWNOWElmSGVWa3JFZHBOc2hrNk52WkFIaWVaQUtRMzZ4bm5DVA==' is designed to return ONLY media data it does NOT include user profile data.
+
+
+like the story 
+https://i.instagram.com/api/v1/story_interactions/send_story_like
+
+"/following/?
+"https://i.instagram.com/api/v1/friendships/" + id + "/following/?rank_token=" + Guid.NewGuid.ToString.ToUpper
+my token
+https://i.instagram.com/api/v1/friendships/964189106/following/?rank_token=EABPsNXmodVsBAD2oov77SbBs6HVls0o48ki5Js5ElEOzpERDMAm4TNK0NfMPfqD1lrfqnrZBEuOrZCuIgmUpoS00LVejnqR4rNQjjdrnNmPGvKRioqpvyn0HXvuUWTehPNFxqNzeDkV0Sct9xo7m3Miw9W5P9yTZCFnmDrh4kZCQGrU0y1XpA3GLzTX04BM0E0ZALbefZABAZDZD
+
+get instagram user id
+idurl = "https://www.instagram.com/web/search/topsearch/?context=blended&query=mohamedalhabbo&rank_token=0.3953592318270893&count=1"
+
+
+got 109
+token_url = 'https://i.instagram.com/api/v1/friendships/964189106/following/?rank_token=0.3953592318270893&count=1000'
+EABPsNXmodVsBABWWIhCDsfgtchE1M1jTuvll3f0R74XW0jXaVJYkWzp5dZCUtHalenMZA0kLNEkIl90agvq0EvGzrfIZCcXNhjzKhhvacVh3bJcPkQE6pPlTAFqe8vddjqdsZCNN0gs2gMXygN7NhuGMRaGKfM3T4JIlTWR6CZAf1hTTtEzZBCOhfvwmyAbKXUvgY1H7WZCMEkuZBGLhcXgZCyjcnlNs4TK4aNSVA4jTRDEvNdPOKqP1X
+headers = {
+"User-Agent": "Instagram 85.0.0.21.100 Android (28/9; 380dpi; 1080x2147; OnePlus; HWEVA; OnePlus6T; qcom; en_US; 146536611)",
+"X-CSRFToken": csrf2,
+"X-Requested-With": "XMLHttpRequest",
+"Content-Type": "application/x-www-form-urlencoded"}
+
+*************************************
+https://www.instagram.com/api/v1/friendships/{userid}/followers/?count=12&max_id=72&search_surface=follow_list_page
+
+{
+    const BASE_URL = 'https://www.instagram.com';
+    const LOGIN_URL = 'https://www.instagram.com/accounts/login/ajax/';
+    const ACCOUNT_PAGE = 'https://www.instagram.com/{username}/';
+    const MEDIA_LINK = 'https://www.instagram.com/p/{code}';
+    const ACCOUNT_MEDIAS = 'https://www.instagram.com/graphql/query/?query_hash=e769aa130647d2354c40ea6a439bfc08&variables={variables}';
+    const ACCOUNT_TAGGED_MEDIAS = 'https://www.instagram.com/graphql/query/?query_hash=be13233562af2d229b008d2976b998b5&variables={variables}';
+    const ACCOUNT_JSON_INFO = 'https://www.instagram.com/{username}/?__a=1&__d=dis';
+    const ACCOUNT_ACTIVITY = 'https://www.instagram.com/accounts/activity/?__a=1';
+    const MEDIA_JSON_INFO = 'https://www.instagram.com/p/{code}/?__a=1&__d=dis';
+    const MEDIA_JSON_BY_LOCATION_ID = 'https://www.instagram.com/explore/locations/{{facebookLocationId}}/?__a=1&max_id={{maxId}}';
+    const MEDIA_JSON_BY_TAG = 'https://www.instagram.com/explore/tags/{tag}/?__a=1&max_id={max_id}&__d=dis';
+    const GENERAL_SEARCH = 'https://www.instagram.com/web/search/topsearch/?query={query}&count={count}';
+    const ACCOUNT_JSON_INFO_BY_ID = 'ig_user({userId}){id,username,external_url,full_name,profile_pic_url,biography,followed_by{count},follows{count},media{count},is_private,is_verified}';
+    const COMMENTS_BEFORE_COMMENT_ID_BY_CODE = 'https://www.instagram.com/graphql/query/?query_hash=33ba35852cb50da46f5b5e889df7d159&variables={variables}';
+    const LAST_LIKES_BY_CODE = 'ig_shortcode({{code}}){likes{nodes{id,user{id,profile_pic_url,username,follows{count},followed_by{count},biography,full_name,media{count},is_private,external_url,is_verified}},page_info}}';
+    const LIKES_BY_SHORTCODE = 'https://www.instagram.com/graphql/query/?query_id=17864450716183058&variables={"shortcode":"{{shortcode}}","first":{{count}},"after":"{{likeId}}"}';
+    const FOLLOWING_URL = 'https://www.instagram.com/graphql/query/?query_id=17874545323001329&id={{accountId}}&first={{count}}&after={{after}}';
+    const FOLLOWERS_URL = 'https://www.instagram.com/graphql/query/?query_id=17851374694183129&id={{accountId}}&first={{count}}&after={{after}}';
+    const FOLLOWING_URL_V1 = 'https://i.instagram.com/api/v1/friendships/{{accountId}}/following/';
+    const FOLLOWERS_URL_V1 = 'https://i.instagram.com/api/v1/friendships/{{accountId}}/followers/';
+    const FOLLOW_URL = 'https://www.instagram.com/web/friendships/{{accountId}}/follow/';
+    const UNFOLLOW_URL = 'https://www.instagram.com/web/friendships/{{accountId}}/unfollow/';
+    const REMOVE_FOLLOWER_URL = 'https://www.instagram.com/web/friendships/{{accountId}}/remove_follower/';
+    const PENDING_URL = 'https://i.instagram.com/api/v1/friendships/pending/';
+    const INBOX_NEWS_URL = 'https://i.instagram.com/api/v1/news/inbox/';
+    const INBOX_NEWS_SEEN_URL = 'https://i.instagram.com/api/v1/news/inbox_seen/';
+    const USER_TAGS = 'https://i.instagram.com/api/v1/usertags/{{accountId}}/feed/?count={{count}}';
+    const USER_FEED = 'https://www.instagram.com/graphql/query/?query_id=17861995474116400&fetch_media_item_count=12&fetch_media_item_cursor=&fetch_comment_count=4&fetch_like=10';
+    const USER_FEED2 = 'https://www.instagram.com/?__a=1';
+    const USER_FEED_hash = 'https://www.instagram.com/graphql/query/?query_hash=3f01472fb28fb8aca9ad9dbc9d4578ff';
+    const INSTAGRAM_QUERY_URL = 'https://www.instagram.com/query/';
+    const INSTAGRAM_CDN_URL = 'https://scontent.cdninstagram.com/';
+    const ACCOUNT_JSON_PRIVATE_INFO_BY_ID = 'https://i.instagram.com/api/v1/users/{userId}/info/';
+    const ACCOUNT_JSON_PRIVATE_INFO_BY_ID_2 = 'https://www.instagram.com/graphql/query/?query_hash=c9100bf9110dd6361671f113dd02e7d6&variables={"user_id":"{userId}","include_chaining":false,"include_reel":true,"include_suggested_users":false,"include_logged_out_extras":false,"include_highlight_reels":false,"include_related_profiles":false}';
+    const LIKE_URL = 'https://www.instagram.com/web/likes/{mediaId}/like/';
+    const UNLIKE_URL = 'https://www.instagram.com/web/likes/{mediaId}/unlike/';
+    const ADD_COMMENT_URL = 'https://www.instagram.com/web/comments/{mediaId}/add/';
+    const DELETE_COMMENT_URL = 'https://www.instagram.com/web/comments/{mediaId}/delete/{commentId}/';
+    const ACCOUNT_MEDIAS2 = 'https://www.instagram.com/graphql/query/?query_id=17880160963012870&id={{accountId}}&first=10&after=';
+    const HIGHLIGHT_URL = 'https://www.instagram.com/graphql/query/?query_hash=c9100bf9110dd6361671f113dd02e7d6&variables={"user_id":"{userId}","include_chaining":false,"include_reel":true,"include_suggested_users":false,"include_logged_out_extras":false,"include_highlight_reels":true,"include_live_status":false}';
+    const HIGHLIGHT_STORIES = 'https://www.instagram.com/graphql/query/?query_hash=45246d3fe16ccc6577e0bd297a5db1ab';
+    const THREADS_URL = 'https://i.instagram.com/api/v1/direct_v2/inbox/?persistentBadging=true&folder=&limit={limit}&thread_message_limit={messageLimit}&cursor={cursor}';
+    const THREADS_PENDING_REQUESTS_URL = 'https://i.instagram.com/api/v1/direct_v2/pending_inbox/?limit={limit}&cursor={cursor}';
+    const THREADS_APPROVE_MULTIPLE_URL = 'https://i.instagram.com/api/v1/direct_v2/threads/approve_multiple/';
+
+    // Look alike??
+    const URL_SIMILAR = 'https://www.instagram.com/graphql/query/?query_id=17845312237175864&id=4663052';
+
+    const GRAPH_QL_QUERY_URL = 'https://www.instagram.com/graphql/query/?query_id={{queryId}}';
+
+BASE_URL = 'https://www.instagram.com/'
+LOGIN_URL = BASE_URL + 'accounts/login/ajax/'
+LOGOUT_URL = BASE_URL + 'accounts/logout/'
+CHROME_WIN_UA = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+USER_URL = BASE_URL + '{0}/?__a=1'
+USER_INFO = 'https://i.instagram.com/api/v1/users/{0}/info/'
+
+WEB_PROFILE_INFO = 'https://i.instagram.com/api/v1/users/web_profile_info/?username={0}'
+
+MAIN_STORIES_URL = BASE_URL + 'graphql/query/?query_hash=45246d3fe16ccc6577e0bd297a5db1ab&variables=%7B%22reel_ids%22%3A%5B%22{0}%22%5D%2C%22tag_names%22%3A%5B%5D%2C%22location_ids%22%3A%5B%5D%2C%22highlight_reel_ids%22%3A%5B%5D%2C%22precomposed_overlay%22%3Afalse%7D'
+HIGHLIGHT_STORIES_USER_ID_URL = BASE_URL + 'graphql/query/?query_hash=c9100bf9110dd6361671f113dd02e7d6&variables=%7B%22user_id%22%3A%22{0}%22%2C%22include_chaining%22%3Afalse%2C%22include_reel%22%3Afalse%2C%22include_suggested_users%22%3Afalse%2C%22include_logged_out_extras%22%3Afalse%2C%22include_highlight_reels%22%3Atrue%2C%22include_related_profiles%22%3Afalse%7D'
+HIGHLIGHT_STORIES_REEL_ID_URL = BASE_URL + 'graphql/query/?query_hash=45246d3fe16ccc6577e0bd297a5db1ab&variables=%7B%22reel_ids%22%3A%5B%5D%2C%22tag_names%22%3A%5B%5D%2C%22location_ids%22%3A%5B%5D%2C%22highlight_reel_ids%22%3A%5B%22{0}%22%5D%2C%22precomposed_overlay%22%3Afalse%7D'
+STORIES_UA = 'Instagram 123.0.0.21.114 (iPhone; CPU iPhone OS 11_4 like Mac OS X; en_US; en-US; scale=2.00; 750x1334) AppleWebKit/605.1.15'
+
+BROADCAST_URL = BASE_URL + 'api/v1/feed/user/{0}/story/'
+
+TAGS_URL = BASE_URL + 'explore/tags/{0}/?__a=1'
+LOCATIONS_URL = BASE_URL + 'explore/locations/{0}/?__a=1'
+VIEW_MEDIA_URL = 'https://i.instagram.com/api/v1/media/{0}/info/'
+SEARCH_URL = BASE_URL + 'web/search/topsearch/?context=blended&query={0}'
+
+QUERY_FOLLOWINGS = BASE_URL + 'graphql/query/?query_hash=c56ee0ae1f89cdbd1c89e2bc6b8f3d18&variables={0}'
+QUERY_FOLLOWINGS_VARS = '{{"id":"{0}","first":50,"after":"{1}"}}'
+
+QUERY_COMMENTS = BASE_URL + 'graphql/query/?query_hash=33ba35852cb50da46f5b5e889df7d159&variables={0}'
+QUERY_COMMENTS_VARS = '{{"shortcode":"{0}","first":50,"after":"{1}"}}'
+
+QUERY_HASHTAG = BASE_URL + 'graphql/query/?query_hash=ded47faa9a1aaded10161a2ff32abb6b&variables={0}'
+QUERY_HASHTAG_VARS = '{{"tag_name":"{0}","first":50,"after":"{1}"}}'
+
+QUERY_LOCATION = BASE_URL + 'graphql/query/?query_hash=ac38b90f0f3981c42092016a37c59bf7&variables={0}'
+QUERY_LOCATION_VARS = '{{"id":"{0}","first":50,"after":"{1}"}}'
+
+QUERY_MEDIA = BASE_URL + 'graphql/query/?query_hash=42323d64886122307be10013ad2dcc44&variables={0}'
+QUERY_MEDIA_VARS = '{{"id":"{0}","first":50,"after":"{1}"}}'
+
+MAX_CONCURRENT_DOWNLOADS = 5
+CONNECT_TIMEOUT = 90
+MAX_RETRIES = 5
+RETRY_DELAY = 5
+MAX_RETRY_DELAY = 60
+
+LATEST_STAMPS_USER_SECTION = 'users'
+
+'17880160963012870'+user_id+first = user_feed
+17852405266163336+shortcode+first = media comment
+'17874545323001329'+id+first = user_following
+'17851374694183129'+id+first = user_followers
+# Explore tags
+https://www.instagram.com/graphql/query/?query_id=17875800862117404&variables=%7B%22tag_name%22%3A%22<tag_name>%22%2C%22first%22%3A<num_of_posts>%7D
+# Note: Still have to figure out how to get this data without using selenium once logged in.
+# **Only works with logged in user**
+# User profile following
+https://www.instagram.com/graphql/query/?query_id=17874545323001329&variables=%7B%22id%22%3A%22<user_id>%22%2C%22first%22%3A<num_of_following>%7D
+# User profile followers
+https://www.instagram.com/graphql/query/?query_id=17874545323001329&variables=%7B%22id%22%3A%22<user_id>%22%2C%22first%22%3A<num_of_followers>%7D
+# User profile posts
+https://www.instagram.com/graphql/query/?query_id=17888483320059182&variables=%7B%22id%22%3A%22<user_id>%22%2C%22first%22%3A<num_of_posts>%7D
+# Post page likes
+https://www.instagram.com/graphql/query/?query_id=17864450716183058&variables=%7B%22shortcode%22%3A%22<id_of_post>%22X2C%22first%22%3A<num_of_likes>%7D
+# Post page comments
+https://www.instagram.com/graphql/query/?query_id=17852405266163336&variables={"shortcode":"<id_of_post>","first":<num_of_comments>}
+# Feed posts
+https://www.instagram.com/graphql/query/?query_id=17842794232208280&variables={%22fetch_media_item_count%22:<num_of_posts>,%22fetch_comment_count%22:<num_of_comments_per_post>,%22fetch_like%22:<num_of_likers_per_post>}
+# Profile suggestios in feed
+https://www.instagram.com/graphql/query/?query_id=17847560125201451&variables={%22fetch_media_count%22:<num_of_posts_per_suggestion>,%22fetch_suggested_count%22:<num_of_suggestions>,%22filter_followed_friends%22:true, "has_stories":false}
+# Post suggestions for user
+https://www.instagram.com/graphql/query/?query_id=17863787143139595&variables={%22first%22:<num_of_posts>}
+https://www.instagram.com/graphql/query/?query_hash=45246d3fe16ccc6577e0bd297a5db1ab&variables=%7B%22reel_ids%22%3A%5B%22964189106%22%5D%2C%22tag_names%22%3A%5B%5D%2C%22location_ids%22%3A%5B%5D%2C%22highlight_reel_ids%22%3A%5B%5D%2C%22precomposed_overlay%22%3Afalse%7D
+["data"]["reels_media"]["items"]["id"]
+
+https://www.instagram.com/api/v1/feed/reels_media/?reel_ids=964189106
+
+surl = f'https://www.instagram.com/graphql/query/?query_hash=c9c56db64beb4c9dea2d17740d0259d9&variables=%7B%22reel_ids%22%3A%5B%22964189106%22%5D%2C%22tag_names%22%3A%5B%5D%2C%22location_ids%22%3A%5B%5D%2C%22highlight_reel_ids%22%3A%5B%5D%2C%22precomposed_overlay%22%3Afalse%2C%22show_story_viewer_list%22%3Atrue%2C%22story_viewer_fetch_count%22%3A50%2C%22story_viewer_cursor%22%3A%22%22%2C%22stories_video_dash_manifest%22%3Afalse%7D'
+gave storyid and user id and username
+get 
+q_headers = {'accept': '*/*',
+            'accept-encoding': 'gzip, deflate, br',
+            'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,ar;q=0.7',
+            'sec-ch-prefers-color-scheme': 'dark',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Windows"',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-site': 'none',
+            'sec-fetch-user': '?1',
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
+            'viewport-width': '464',
+            'x-asbd-id': '198387',
+            'x-csrftoken': str(login_csrf),
+            'upgrade-insecure-requests': '1',
+            'x-ig-app-id': '936619743392459',
+            'x-ig-www-claim': '0',
+            'x-requested-with': 'XMLHttpRequest'}
+q_data = {'query_hash':'c9c56db64beb4c9dea2d17740d0259d9','variables':{'reel_ids':'964189106','tag_names':[],'location_ids':[],'highlight_reel_ids':[],'precomposed_overlay':'false','show_story_viewer_list':'true','story_viewer_fetch_count':50,'story_viewer_cursor':'','stories_video_dash_manifest':'false'}}
+
+
+headers={
+
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'accept-language': 'en-GB,en;q=0.9',
+            'Dpr':'1',
+            'sec-ch-prefers-color-scheme': 'dark',
+            'sec-ch-ua-mobile': '?0',
+            'Sec-Ch-Ua':'"Google Chrome";v="117", "Not;A=Brand";v="8", "Chromium";v="117"',
+            'Sec-Ch-Ua-Full-Version-List':'"Google Chrome";v="117.0.5938.150", "Not;A=Brand";v="8.0.0.0", "Chromium";v="117.0.5938.150"',
+            'sec-ch-ua-platform': '"Windows"',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-site': 'none',
+            'sec-fetch-user': '?1',
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
+            'viewport-width': '464',
+            'x-asbd-id': '198387',
+            'upgrade-insecure-requests': '1',
+            'x-ig-app-id': '936619743392459',
+            'x-ig-www-claim': '0',
+            'x-requested-with': 'XMLHttpRequest'
+
+            })

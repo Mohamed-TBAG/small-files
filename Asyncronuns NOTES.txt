@@ -1,0 +1,77 @@
+
+if the functions contains a code that stops the full code,
+i will call it using create task without await for it,
+if i do not want it to stop the code like selinum functions.
+
+and if the function is not stopping the code like async http requests i will call it normal,
+if i want that function (the async requests) to stop the code when it work i will await for it 
+
+asyncio.gather() This ensures both normal and CODEStoppinFunctinos run at the same time, and go to next line only runs after both finish.
+
+even if an async function runs inside a create_task(), the code will stop if this function have a line say [self.driver.get(instagram_url+"accounts/login/")]
+
+the code will stop other functions untill this finish
+to solve this use asyncio.to_thread() to parse the code wich is inside a saperatd function
+
+** if a function is holding the code make it normal function (not async)
+and call it inside an async func using await asyncio.to_thread(self.mouse_move) and await for it
+only the function that called it will stop until it finish because it called using await
+
+if the function is async do not put it in thread just call it or await for it
+if not, so call it inside an function that is async using await asyncio.to_thread(self.mouse_move)
+the thread is used inside a async function that calls a normal function, even if this normal have time.sleep in it
+means the thread is a proccessing thread for this part of the code wich does not affect or stop others
+
+
+
+in main running we have two ways
+1: await asyncio.gather(bot.run(), bot.masslooking())
+this works by calling them both and not go next untill both of them done
+
+2:
+    task1 = asyncio.create_task(bot.run())
+    task2 = asyncio.create_task(bot.masslooking())
+    await task2
+this create two separated tasks so they both work saparatly and no one affect another (depens on each code) only if 
+no one of them is stopping the code so they work at same time, await for one of the tasks means do not go next until this one finishs
+
+
+GPT {
+    Handling Blocking Functions:
+    Your Note: "If the function contains code that stops the full code, I will call it using create_task without await for it."
+    Clarification: Using asyncio.create_task() schedules the coroutine to run concurrently but doesn't block the event loop. However, if the function contains blocking code (e.g., synchronous I/O operations), it can still block the event loop. To prevent this, consider running such functions in a separate thread using asyncio.to_thread(). 
+    SUPER FAST PYTHON
+
+    Non-Blocking Functions:
+    Your Note: "If the function is not stopping the code like async HTTP requests, I will call it normal."
+    Clarification: Asynchronous functions, such as those performing non-blocking I/O operations, should be awaited to ensure proper execution order and to handle exceptions. Calling them without await can lead to unexpected behavior.
+
+    Using asyncio.gather():
+    Your Note: "This ensures both normal and code-stopping functions run at the same time, and the next line only runs after both finish."
+    Clarification: asyncio.gather() is used to run multiple asynchronous functions concurrently and wait for their results. It doesn't inherently handle blocking functions. For blocking functions, use asyncio.to_thread() to run them in a separate thread. 
+    SUPER FAST PYTHON
+ 
+    Blocking Operations in Asynchronous Functions:
+    Your Note: "Even if an async function runs inside a create_task(), the code will stop if this function has a line like [self.driver.get(instagram_url+'accounts/login/')]."
+    Clarification: Correct. If an asynchronous function contains blocking operations (e.g., synchronous I/O), it can block the event loop. To prevent this, run such operations in a separate thread using asyncio.to_thread(). 
+    SUPER FAST PYTHON
+   
+    Converting Blocking Functions to Asynchronous:
+    Your Note: "If a function is holding the code, make it a normal function (not async) and call it inside an async function using await asyncio.to_thread(self.mouse_move) and await for it."
+    Clarification: If a function contains blocking code, it's appropriate to run it in a separate thread using asyncio.to_thread(). However, the function itself doesn't need to be converted to a normal (non-async) function. You can keep it as an asynchronous function and use await asyncio.to_thread() to run the blocking parts in a separate thread. 
+    SUPER FAST PYTHON
+   
+    Threading in Asynchronous Functions:
+    Your Note: "If the function is async, do not put it in a thread; just call it or await for it."
+    Clarification: Asynchronous functions are designed to be non-blocking and should be awaited directly. There's no need to run them in a separate thread.
+  
+    Using asyncio.to_thread():
+    Your Note: "The thread is used inside an async function that calls a normal function, even if this normal function has time.sleep in it."
+    Clarification: Correct. asyncio.to_thread() allows you to run blocking functions (including those with time.sleep) in a separate thread, preventing them from blocking the event loop. 
+    SUPER FAST PYTHON
+    
+    Running Multiple Tasks Concurrently:
+    Your Note: "In main running, we have two ways: 1: await asyncio.gather(bot.run(), bot.masslooking()) 2: task1 = asyncio.create_task(bot.run()) task2 = asyncio.create_task(bot.masslooking()) await task2"
+    Clarification: Both approaches are valid for running multiple tasks concurrently. The first approach waits for both tasks to complete before proceeding. The second approach creates tasks and awaits one of them, allowing the other to run concurrently. The choice depends on whether you need to wait for both tasks to complete or just one.
+
+}
